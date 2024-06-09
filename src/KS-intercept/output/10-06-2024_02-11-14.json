@@ -1,0 +1,3227 @@
+﻿[
+    {
+        "type": "TEXT",
+        "text": "Напишите латинское название семейства, к которому относится вирус клещевого энцефалита:",
+        "text_after": "",
+        "number": 0,
+        "images": [],
+        "answers": [],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "На схеме представлено устройство вирусной частицы. Какое из представленных описаний наиболее ей соответствует?",
+        "text_after": "",
+        "number": 1,
+        "images": [
+            "6659a7e101d9c1.76404562.png"
+        ],
+        "answers": [
+            {
+                "uid": 3563,
+                "answer": "Простой (безоболочечный) вирус со спиральным типом симметрии капсида",
+                "images": []
+            },
+            {
+                "uid": 32076,
+                "answer": "Простой (безоболочечный) вирус с икосаэдрическим типом симметрии капсида",
+                "images": []
+            },
+            {
+                "uid": 24363,
+                "answer": "Сложный (оболочечный) вирус со спиральным типом симметрии капсида",
+                "images": []
+            },
+            {
+                "uid": 4267,
+                "answer": "Сложный (оболочечный) вирус с икосаэдрическим типом симметрии капсида",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "В терапии какого из перечисленных заболеваний используют ингибиторы обратной транскриптазы?",
+        "text_after": "",
+        "number": 2,
+        "images": [],
+        "answers": [
+            {
+                "uid": 28654,
+                "answer": "ВИЧ-инфекция",
+                "images": []
+            },
+            {
+                "uid": 14866,
+                "answer": "грипп",
+                "images": []
+            },
+            {
+                "uid": 642,
+                "answer": "гепатит А",
+                "images": []
+            },
+            {
+                "uid": 21855,
+                "answer": "ветряная оспа",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "MANY_FROM_MANY",
+        "text": "Перечислите видимые проявления цитопатического действия вирусов на культуру клеток:",
+        "text_after": "",
+        "number": 3,
+        "images": [],
+        "answers": [
+            {
+                "uid": 20577,
+                "answer": "трансформация клеток",
+                "images": []
+            },
+            {
+                "uid": 12156,
+                "answer": "образование включений",
+                "images": []
+            },
+            {
+                "uid": 24606,
+                "answer": "симпластообразование",
+                "images": []
+            },
+            {
+                "uid": 10920,
+                "answer": "гибель клеток, нарушение клеточного монослоя",
+                "images": []
+            },
+            {
+                "uid": 13640,
+                "answer": "образование клеточного монослоя",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Выберите путь, ведущий к образованию белка у SARS-CoV-2:",
+        "text_after": "",
+        "number": 4,
+        "images": [],
+        "answers": [
+            {
+                "uid": 8058,
+                "answer": "Геномная РНК -> двухцепочечная ДНК -> мРНК -> белок",
+                "images": []
+            },
+            {
+                "uid": 1491,
+                "answer": "Геномная ДНК -> белок",
+                "images": []
+            },
+            {
+                "uid": 13209,
+                "answer": "Геномная +РНК -> белок",
+                "images": []
+            },
+            {
+                "uid": 17324,
+                "answer": "Геномная –РНК -> мРНК -> белок",
+                "images": []
+            },
+            {
+                "uid": 23929,
+                "answer": "Геномная ДНК -> мРНК -> белок",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "MATCHING",
+        "text": "Установите соответствие между вирусом и типом нуклеиновой кислоты:",
+        "text_after": "",
+        "number": 5,
+        "images": [],
+        "answers": [
+            {
+                "uid": 22130,
+                "answer": "вирус бешенства",
+                "images": []
+            },
+            {
+                "uid": 21740,
+                "answer": "вирус полиомиелита",
+                "images": []
+            },
+            {
+                "uid": 32261,
+                "answer": "вирус гриппа",
+                "images": []
+            },
+            {
+                "uid": 30075,
+                "answer": "ротавирус",
+                "images": []
+            },
+            {
+                "uid": 25819,
+                "answer": "вирус простого герпеса",
+                "images": []
+            }
+        ],
+        "answers_draggable": [
+            {
+                "uid": 0,
+                "answer": "двухцепочечная РНК",
+                "images": []
+            },
+            {
+                "uid": 1,
+                "answer": "одноцепочечная несегментированная -РНК",
+                "images": []
+            },
+            {
+                "uid": 2,
+                "answer": "одноцепочечная сегментированная -РНК",
+                "images": []
+            },
+            {
+                "uid": 3,
+                "answer": "двухцепочечная ДНК",
+                "images": []
+            },
+            {
+                "uid": 4,
+                "answer": "одноцепочечная +РНК",
+                "images": []
+            }
+        ],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Какому из перечисленных вирусов соответствует данная схема стратегии репликации генома?",
+        "text_after": "",
+        "number": 6,
+        "images": [
+            "6659a7e11f29a4.49722108.png"
+        ],
+        "answers": [
+            {
+                "uid": 29273,
+                "answer": "Вирус иммунодефицита человека (ВИЧ-1)",
+                "images": []
+            },
+            {
+                "uid": 4389,
+                "answer": "Вирус гепатита А",
+                "images": []
+            },
+            {
+                "uid": 5123,
+                "answer": "Вирус гриппа А",
+                "images": []
+            },
+            {
+                "uid": 23173,
+                "answer": "Цитомегаловирус",
+                "images": []
+            },
+            {
+                "uid": 19805,
+                "answer": "Вирус полиомиелита",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Механизмом действия ацикловира является:",
+        "text_after": "",
+        "number": 7,
+        "images": [],
+        "answers": [
+            {
+                "uid": 24291,
+                "answer": "ингибирование ДНК-полимеразы герпесвирусов",
+                "images": []
+            },
+            {
+                "uid": 13903,
+                "answer": "ингибирование обратной транскриптазы ретровирусов и вируса гепатита B",
+                "images": []
+            },
+            {
+                "uid": 15636,
+                "answer": "нарушение целостности мембраны вирусных частиц",
+                "images": []
+            },
+            {
+                "uid": 3022,
+                "answer": "ингибирование протеазы вируса иммунодефицита человека",
+                "images": []
+            },
+            {
+                "uid": 28165,
+                "answer": "ингибирование синтеза белка в зараженных вирусами клеток",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Механизмом действия аномального нуклеозида ацикловира является:",
+        "text_after": "",
+        "number": 8,
+        "images": [],
+        "answers": [
+            {
+                "uid": 23636,
+                "answer": "ингибирование ДНК-зависимой-ДНК-полимеразы герпесвирусов",
+                "images": []
+            },
+            {
+                "uid": 1230,
+                "answer": "ингибирование протеазы ВИЧ-1",
+                "images": []
+            },
+            {
+                "uid": 16427,
+                "answer": "ингибирование синтеза белка в зараженных вирусами клетках",
+                "images": []
+            },
+            {
+                "uid": 31988,
+                "answer": "нарушение целостности мембраны вирусных частиц",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Какому из перечисленных семейств вирусов соответствует данная схема стратегии репликации генома?",
+        "text_after": "",
+        "number": 9,
+        "images": [
+            "6659a7e1139be9.63829600.png"
+        ],
+        "answers": [
+            {
+                "uid": 6704,
+                "answer": "Paramyxoviridae",
+                "images": []
+            },
+            {
+                "uid": 2704,
+                "answer": "Retroviridae",
+                "images": []
+            },
+            {
+                "uid": 14298,
+                "answer": "Picornaviridae",
+                "images": []
+            },
+            {
+                "uid": 13020,
+                "answer": "Hepadnaviridae",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "MANY_FROM_MANY",
+        "text": "К противовирусным препаратам относятся:",
+        "text_after": "",
+        "number": 10,
+        "images": [],
+        "answers": [
+            {
+                "uid": 1814,
+                "answer": "аномальные нуклеозиды",
+                "images": []
+            },
+            {
+                "uid": 18889,
+                "answer": "антибиотики",
+                "images": []
+            },
+            {
+                "uid": 21255,
+                "answer": "интерфероны",
+                "images": []
+            },
+            {
+                "uid": 11334,
+                "answer": "бактериофаги",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "MATCHING",
+        "text": "Установите соответствие между вирусом и таксономической категорией:",
+        "text_after": "",
+        "number": 11,
+        "images": [],
+        "answers": [
+            {
+                "uid": 6171,
+                "answer": "вирус SARS-CoV-2",
+                "images": []
+            },
+            {
+                "uid": 14139,
+                "answer": "вирус гриппа",
+                "images": []
+            },
+            {
+                "uid": 15432,
+                "answer": "вирус клещевого энцефалита",
+                "images": []
+            },
+            {
+                "uid": 11668,
+                "answer": "вирус бешенства",
+                "images": []
+            },
+            {
+                "uid": 5240,
+                "answer": "вирус кори",
+                "images": []
+            }
+        ],
+        "answers_draggable": [
+            {
+                "uid": 0,
+                "answer": "Paramyxoviridae",
+                "images": []
+            },
+            {
+                "uid": 1,
+                "answer": "Flaviviridae",
+                "images": []
+            },
+            {
+                "uid": 2,
+                "answer": "Coronaviridae",
+                "images": []
+            },
+            {
+                "uid": 3,
+                "answer": "Rhabdoviridae",
+                "images": []
+            },
+            {
+                "uid": 4,
+                "answer": "Orthomyxoviridae",
+                "images": []
+            }
+        ],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "TEXT",
+        "text": "Напишите латинское название семейства, к которому относится вирус SARS-CoV-2:",
+        "text_after": "",
+        "number": 12,
+        "images": [],
+        "answers": [],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Какому из перечисленных вирусов соответствует данная схема проникновения вируса в клетку?",
+        "text_after": "",
+        "number": 13,
+        "images": [
+            "6659a7e0ba81f2.94917517.png"
+        ],
+        "answers": [
+            {
+                "uid": 11514,
+                "answer": "Вирус полиомиелита",
+                "images": []
+            },
+            {
+                "uid": 12612,
+                "answer": "ВИЧ-1",
+                "images": []
+            },
+            {
+                "uid": 28963,
+                "answer": "Вирус гепатита А",
+                "images": []
+            },
+            {
+                "uid": 6655,
+                "answer": "Ротавирус А",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Основным механизмом передачи SARS-CoV-2 является:",
+        "text_after": "",
+        "number": 14,
+        "images": [],
+        "answers": [
+            {
+                "uid": 25494,
+                "answer": "трансмиссивный",
+                "images": []
+            },
+            {
+                "uid": 10610,
+                "answer": "аэрогенный",
+                "images": []
+            },
+            {
+                "uid": 2495,
+                "answer": "контактный",
+                "images": []
+            },
+            {
+                "uid": 301,
+                "answer": "вертикальный",
+                "images": []
+            },
+            {
+                "uid": 24654,
+                "answer": "фекально-оральный",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Какой тип симметрии вирусного капсида представлен на данной трехмерной реконструкции?",
+        "text_after": "",
+        "number": 15,
+        "images": [
+            "6659a7e0dd2ea3.47623555.png"
+        ],
+        "answers": [
+            {
+                "uid": 14417,
+                "answer": "Спиральный",
+                "images": []
+            },
+            {
+                "uid": 20973,
+                "answer": "Двухцепочечный",
+                "images": []
+            },
+            {
+                "uid": 20602,
+                "answer": "Кольцевой",
+                "images": []
+            },
+            {
+                "uid": 25913,
+                "answer": "Икосаэдрический",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "MATCHING",
+        "text": "Установите соответствие между вирусом и морфологией вириона:",
+        "text_after": "",
+        "number": 16,
+        "images": [],
+        "answers": [
+            {
+                "uid": 16231,
+                "answer": "вирус гепатита В",
+                "images": []
+            },
+            {
+                "uid": 8585,
+                "answer": "вирус иммунодефицита человека",
+                "images": []
+            },
+            {
+                "uid": 4653,
+                "answer": "вирус гепатита А",
+                "images": []
+            },
+            {
+                "uid": 23050,
+                "answer": "ротавирус",
+                "images": []
+            },
+            {
+                "uid": 20482,
+                "answer": "вирус гриппа",
+                "images": []
+            }
+        ],
+        "answers_draggable": [
+            {
+                "uid": 0,
+                "answer": "сложный (оболочечный), икосаэдрический тип симметрии капсида, ДНК геномный",
+                "images": []
+            },
+            {
+                "uid": 1,
+                "answer": "простой (безоболочечный), многослойный белковый капсид, РНК геномный",
+                "images": []
+            },
+            {
+                "uid": 2,
+                "answer": "сложный (оболочечный), спиральный тип симметрии, -РНК геномный",
+                "images": []
+            },
+            {
+                "uid": 3,
+                "answer": "простой (безоболочечный), икосаэдрический тип симметрии капсида, +РНК геномный",
+                "images": []
+            },
+            {
+                "uid": 4,
+                "answer": "сложный (оболочечный), икосаэдрический тип симметрии капсида, РНК геномный",
+                "images": []
+            }
+        ],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "TEXT",
+        "text": "Напишите латинское название семейства, к которому относится вирус полиомиелита:",
+        "text_after": "",
+        "number": 17,
+        "images": [],
+        "answers": [],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "MANY_FROM_MANY",
+        "text": "Искусственный пассивный противовирусный иммунитет формируется при использовании:",
+        "text_after": "",
+        "number": 18,
+        "images": [],
+        "answers": [
+            {
+                "uid": 18175,
+                "answer": "иммуноглобулина противогриппозного",
+                "images": []
+            },
+            {
+                "uid": 11775,
+                "answer": "иммуноглобулина антирабического",
+                "images": []
+            },
+            {
+                "uid": 31545,
+                "answer": "иммуноглобулина лептоспирозного",
+                "images": []
+            },
+            {
+                "uid": 3550,
+                "answer": "иммуноглобулина антистафилококкового",
+                "images": []
+            },
+            {
+                "uid": 18847,
+                "answer": "иммуноглобулина против гепатита В",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "К какому классу препаратов, применяемых для терапии вирусных инфекций, относится вещество, представленное на схеме?",
+        "text_after": "",
+        "number": 19,
+        "images": [
+            "6659a7e0d57078.33134000.png"
+        ],
+        "answers": [
+            {
+                "uid": 29064,
+                "answer": "нуклеозидный ингибитор РНК-зависимой-РНК-полимеразы",
+                "images": []
+            },
+            {
+                "uid": 22635,
+                "answer": "моноклональное антитело",
+                "images": []
+            },
+            {
+                "uid": 11451,
+                "answer": "нуклеозидный ингибитор обратной транскриптазы",
+                "images": []
+            },
+            {
+                "uid": 24099,
+                "answer": "интерферон",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Какая из перечисленных ферментативных активностей обозначена знаком вопроса (?) в данной схеме стратегии репликации генома?",
+        "text_after": "",
+        "number": 20,
+        "images": [
+            "6659a7e0edc538.24331749.png"
+        ],
+        "answers": [
+            {
+                "uid": 15968,
+                "answer": "Обратная транскриптаза",
+                "images": []
+            },
+            {
+                "uid": 12079,
+                "answer": "ДНК-зависимая ДНК-полимераза",
+                "images": []
+            },
+            {
+                "uid": 3192,
+                "answer": "ДНК-тополизомераза",
+                "images": []
+            },
+            {
+                "uid": 27669,
+                "answer": "ДНК-лигаза",
+                "images": []
+            },
+            {
+                "uid": 12282,
+                "answer": "РНК-зависимая РНК-полимераза",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Какая из перечисленных ферментативных активностей обозначена знаком вопроса (?) в данной схеме стратегии репликации генома?",
+        "text_after": "",
+        "number": 21,
+        "images": [
+            "6659a7e0e72d37.26726611.png"
+        ],
+        "answers": [
+            {
+                "uid": 21313,
+                "answer": "ДНК-зависимая РНК-полимераза",
+                "images": []
+            },
+            {
+                "uid": 29258,
+                "answer": "ДНК-лигаза",
+                "images": []
+            },
+            {
+                "uid": 5264,
+                "answer": "ДНК-тополизомераза",
+                "images": []
+            },
+            {
+                "uid": 24574,
+                "answer": "Обратная транскриптаза",
+                "images": []
+            },
+            {
+                "uid": 10391,
+                "answer": "РНК-зависимая РНК-полимераза",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Какому из перечисленных вирусов соответствует данная схема строения вириона?",
+        "text_after": "",
+        "number": 22,
+        "images": [
+            "6659a7e13ca1e7.71805727.png"
+        ],
+        "answers": [
+            {
+                "uid": 20731,
+                "answer": "Вирус бешенства",
+                "images": []
+            },
+            {
+                "uid": 21776,
+                "answer": "Вирус гепатита А",
+                "images": []
+            },
+            {
+                "uid": 20910,
+                "answer": "Вирус кори",
+                "images": []
+            },
+            {
+                "uid": 1303,
+                "answer": "Вирус иммунодефицита человека (ВИЧ-1)",
+                "images": []
+            },
+            {
+                "uid": 12820,
+                "answer": "Вирус простого герпеса",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "MATCHING",
+        "text": "﻿Установите соответствие между группой препаратов и основным механизмом действия:",
+        "text_after": "",
+        "number": 23,
+        "images": [],
+        "answers": [
+            {
+                "uid": 10160,
+                "answer": "альфа-интерфероны",
+                "images": []
+            },
+            {
+                "uid": 22567,
+                "answer": "аномальные нуклеозиды",
+                "images": []
+            },
+            {
+                "uid": 7607,
+                "answer": "ингибиторы протеаз",
+                "images": []
+            },
+            {
+                "uid": 23128,
+                "answer": "специфические иммуноглобулины",
+                "images": []
+            }
+        ],
+        "answers_draggable": [
+            {
+                "uid": 0,
+                "answer": "ингибирование синтеза вирусных нуклеиновых кислот",
+                "images": []
+            },
+            {
+                "uid": 1,
+                "answer": "нарушение нарезания вирусных полипротеинов",
+                "images": []
+            },
+            {
+                "uid": 2,
+                "answer": "нейтрализация внеклеточных вирусных частиц",
+                "images": []
+            },
+            {
+                "uid": 3,
+                "answer": "ингибирование трансляции и разрушение мРНК",
+                "images": []
+            }
+        ],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "По строению простые вирусы являются:",
+        "text_after": "",
+        "number": 24,
+        "images": [],
+        "answers": [
+            {
+                "uid": 8290,
+                "answer": "протеинами",
+                "images": []
+            },
+            {
+                "uid": 14638,
+                "answer": "нуклеопротеинами",
+                "images": []
+            },
+            {
+                "uid": 19381,
+                "answer": "нуклеиновыми кислотами",
+                "images": []
+            },
+            {
+                "uid": 16241,
+                "answer": "гликолипидами",
+                "images": []
+            },
+            {
+                "uid": 16793,
+                "answer": "гликопротеинами",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "MANY_FROM_MANY",
+        "text": "Искусственный активный противовирусный иммунитет формируется при использовании:",
+        "text_after": "",
+        "number": 25,
+        "images": [],
+        "answers": [
+            {
+                "uid": 12548,
+                "answer": "иммуноглобулина противогриппозного",
+                "images": []
+            },
+            {
+                "uid": 28429,
+                "answer": "иммуноглобулина против гепатита В",
+                "images": []
+            },
+            {
+                "uid": 25793,
+                "answer": "рекомбинантной вакцины гепатита В",
+                "images": []
+            },
+            {
+                "uid": 27636,
+                "answer": "живой коревой вакцины",
+                "images": []
+            },
+            {
+                "uid": 23365,
+                "answer": "гриппозной вакцины",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "TEXT",
+        "text": "Напишите латинское название семейства, к которому относится вирус гепатита В:",
+        "text_after": "",
+        "number": 26,
+        "images": [],
+        "answers": [],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "К какому классу препаратов, применяемых для терапии вирусных инфекций, относится вещество, представленное на схеме?",
+        "text_after": "",
+        "number": 27,
+        "images": [
+            "6659a7e0d1b266.05521910.png"
+        ],
+        "answers": [
+            {
+                "uid": 8643,
+                "answer": "аномальный нуклеозид",
+                "images": []
+            },
+            {
+                "uid": 21583,
+                "answer": "моноклональное антитело",
+                "images": []
+            },
+            {
+                "uid": 31333,
+                "answer": "пептидный ингибитор слияния",
+                "images": []
+            },
+            {
+                "uid": 3824,
+                "answer": "интерферон",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "MANY_FROM_MANY",
+        "text": "Репликация вирусного генома может происходить:",
+        "text_after": "",
+        "number": 28,
+        "images": [],
+        "answers": [
+            {
+                "uid": 15850,
+                "answer": "в ядре инфицированной клетки",
+                "images": []
+            },
+            {
+                "uid": 15096,
+                "answer": "в лизосомах",
+                "images": []
+            },
+            {
+                "uid": 5578,
+                "answer": "в центриолях",
+                "images": []
+            },
+            {
+                "uid": 21108,
+                "answer": "в цитоплазме инфицированной клетки",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Какому из перечисленных вирусов соответствует данная схема строения вириона?",
+        "text_after": "",
+        "number": 29,
+        "images": [
+            "6659a7e1384467.79039396.png"
+        ],
+        "answers": [
+            {
+                "uid": 9566,
+                "answer": "Вирус иммунодефицита человека (ВИЧ-1)",
+                "images": []
+            },
+            {
+                "uid": 1362,
+                "answer": "Вирус кори",
+                "images": []
+            },
+            {
+                "uid": 15876,
+                "answer": "Вирус простого герпеса",
+                "images": []
+            },
+            {
+                "uid": 25264,
+                "answer": "Вирус полиомиелита",
+                "images": []
+            },
+            {
+                "uid": 6164,
+                "answer": "Вирус гепатита А",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": true,
+        "duration": null
+    },
+    {
+        "type": "MATCHING",
+        "text": "﻿Установите соответствие между группой препаратов и основным механизмом действия:",
+        "text_after": "",
+        "number": 0,
+        "images": [],
+        "answers": [
+            {
+                "uid": 31941,
+                "answer": "специфические иммуноглобулины",
+                "images": []
+            },
+            {
+                "uid": 16720,
+                "answer": "ингибиторы протеаз",
+                "images": []
+            },
+            {
+                "uid": 17840,
+                "answer": "альфа-интерфероны",
+                "images": []
+            },
+            {
+                "uid": 24753,
+                "answer": "аномальные нуклеозиды",
+                "images": []
+            }
+        ],
+        "answers_draggable": [
+            {
+                "uid": 0,
+                "answer": "ингибирование синтеза вирусных нуклеиновых кислот",
+                "images": []
+            },
+            {
+                "uid": 1,
+                "answer": "ингибирование трансляции и разрушение мРНК",
+                "images": []
+            },
+            {
+                "uid": 2,
+                "answer": "нарушение нарезания вирусных полипротеинов",
+                "images": []
+            },
+            {
+                "uid": 3,
+                "answer": "нейтрализация внеклеточных вирусных частиц",
+                "images": []
+            }
+        ],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "MANY_FROM_MANY",
+        "text": "Выберите верные утверждения про суперкапсид вирусных частиц:",
+        "text_after": "",
+        "number": 1,
+        "images": [],
+        "answers": [
+            {
+                "uid": 29860,
+                "answer": "представляет собой слой полисахаридов и схож по строению с капсулой бактерий",
+                "images": []
+            },
+            {
+                "uid": 21124,
+                "answer": "представляет собой двойной слой фосфолипидов со встроенными в него вирусными гликопротеинами",
+                "images": []
+            },
+            {
+                "uid": 1275,
+                "answer": "образуетс в результате почковывания вирусной частицы через мембраны зараженной клетки",
+                "images": []
+            },
+            {
+                "uid": 28130,
+                "answer": "наличествует только у сложных (оболочечных) вирусов",
+                "images": []
+            },
+            {
+                "uid": 1163,
+                "answer": "участвует в проникновении вируса в клетку",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Какой фермент способен катализировать реакцию синтеза ДНК по матрице РНК?",
+        "text_after": "",
+        "number": 2,
+        "images": [],
+        "answers": [
+            {
+                "uid": 22847,
+                "answer": "обратная транскриптаза",
+                "images": []
+            },
+            {
+                "uid": 30162,
+                "answer": "ДНК-лигаза",
+                "images": []
+            },
+            {
+                "uid": 9557,
+                "answer": "протеаза",
+                "images": []
+            },
+            {
+                "uid": 970,
+                "answer": "транспозаза",
+                "images": []
+            },
+            {
+                "uid": 11753,
+                "answer": "нейраминидаза",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "На трехмерной реконструкции представлена структура фага P68 Staphylococcus aureus. Укажите описание, которое лучше всего будет соответствовать знаку вопроса (?).",
+        "text_after": "",
+        "number": 3,
+        "images": [
+            "6659a7e0e1b652.30190989.png"
+        ],
+        "answers": [
+            {
+                "uid": 13751,
+                "answer": "Головка с икосаэдрическим типом симметрии",
+                "images": []
+            },
+            {
+                "uid": 14190,
+                "answer": "Суперкапсид, образовавшийся при отпочковывании от клетки",
+                "images": []
+            },
+            {
+                "uid": 28561,
+                "answer": "ДНК-зависимая ДНК-полимераза",
+                "images": []
+            },
+            {
+                "uid": 20142,
+                "answer": "Головка со спиральным типом симметрии",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "В терапии какого из перечисленных заболеваний используют ингибиторы обратной транскриптазы?",
+        "text_after": "",
+        "number": 5,
+        "images": [],
+        "answers": [
+            {
+                "uid": 18226,
+                "answer": "грипп",
+                "images": []
+            },
+            {
+                "uid": 14916,
+                "answer": "ВИЧ-инфекция",
+                "images": []
+            },
+            {
+                "uid": 2972,
+                "answer": "гепатит А",
+                "images": []
+            },
+            {
+                "uid": 16213,
+                "answer": "ветряная оспа",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "﻿Какому из перечисленных вирусов соответствует данная схема стратегии репликации генома?",
+        "text_after": "",
+        "number": 6,
+        "images": [
+            "6659a7e1116830.46021541.png"
+        ],
+        "answers": [
+            {
+                "uid": 10847,
+                "answer": "Вирус гепатита А",
+                "images": []
+            },
+            {
+                "uid": 4044,
+                "answer": "Вирус простого герпеса",
+                "images": []
+            },
+            {
+                "uid": 7319,
+                "answer": "Вирус кори",
+                "images": []
+            },
+            {
+                "uid": 32195,
+                "answer": "Вирус иммунодефицита человека (ВИЧ-1)",
+                "images": []
+            },
+            {
+                "uid": 3156,
+                "answer": "Вирус бешенства",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Вирусы бактерий называются:",
+        "text_after": "",
+        "number": 7,
+        "images": [],
+        "answers": [
+            {
+                "uid": 22318,
+                "answer": "бактериолизинами",
+                "images": []
+            },
+            {
+                "uid": 4534,
+                "answer": "бактериофагами",
+                "images": []
+            },
+            {
+                "uid": 27032,
+                "answer": "макрофагами",
+                "images": []
+            },
+            {
+                "uid": 6933,
+                "answer": "бактериофилами",
+                "images": []
+            },
+            {
+                "uid": 19838,
+                "answer": "бактериофобами",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "MATCHING",
+        "text": "Установите соответствие между вирусом и морфологией вириона:",
+        "text_after": "",
+        "number": 8,
+        "images": [],
+        "answers": [
+            {
+                "uid": 30344,
+                "answer": "вирус гриппа",
+                "images": []
+            },
+            {
+                "uid": 2815,
+                "answer": "вирус гепатита В",
+                "images": []
+            },
+            {
+                "uid": 16262,
+                "answer": "вирус иммунодефицита человека",
+                "images": []
+            },
+            {
+                "uid": 24822,
+                "answer": "ротавирус",
+                "images": []
+            },
+            {
+                "uid": 26926,
+                "answer": "вирус гепатита А",
+                "images": []
+            }
+        ],
+        "answers_draggable": [
+            {
+                "uid": 0,
+                "answer": "простой (безоболочечный), многослойный белковый капсид, РНК геномный",
+                "images": []
+            },
+            {
+                "uid": 1,
+                "answer": "простой (безоболочечный), икосаэдрический тип симметрии капсида, +РНК геномный",
+                "images": []
+            },
+            {
+                "uid": 2,
+                "answer": "сложный (оболочечный), икосаэдрический тип симметрии капсида, РНК геномный",
+                "images": []
+            },
+            {
+                "uid": 3,
+                "answer": "сложный (оболочечный), спиральный тип симметрии, -РНК геномный",
+                "images": []
+            },
+            {
+                "uid": 4,
+                "answer": "сложный (оболочечный), икосаэдрический тип симметрии капсида, ДНК геномный",
+                "images": []
+            }
+        ],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Какому из перечисленных вирусов соответствует данная схема стратегии репликации генома?",
+        "text_after": "",
+        "number": 9,
+        "images": [
+            "6659a7e112b0c6.78608759.png"
+        ],
+        "answers": [
+            {
+                "uid": 8360,
+                "answer": "Вирус кори",
+                "images": []
+            },
+            {
+                "uid": 5086,
+                "answer": "Вирус бешенства",
+                "images": []
+            },
+            {
+                "uid": 3687,
+                "answer": "Вирус иммунодефицита человека (ВИЧ-1)",
+                "images": []
+            },
+            {
+                "uid": 7574,
+                "answer": "Вирус полиомиелита",
+                "images": []
+            },
+            {
+                "uid": 13860,
+                "answer": "Вирус простого герпеса",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "MANY_FROM_MANY",
+        "text": "Какие из перечисленных вирусов передаются половым путем?",
+        "text_after": "",
+        "number": 10,
+        "images": [],
+        "answers": [
+            {
+                "uid": 11170,
+                "answer": "вирусы гриппа",
+                "images": []
+            },
+            {
+                "uid": 1681,
+                "answer": "вирусы простого герпеса 2 типа",
+                "images": []
+            },
+            {
+                "uid": 25759,
+                "answer": "вирусы кори",
+                "images": []
+            },
+            {
+                "uid": 16529,
+                "answer": "вирусы гепатита В",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Какому из перечисленных вирусов соответствует данная схема строения вириона?",
+        "text_after": "",
+        "number": 11,
+        "images": [
+            "6659a7e13dbdc0.47028229.png"
+        ],
+        "answers": [
+            {
+                "uid": 11499,
+                "answer": "Вирус гепатита А",
+                "images": []
+            },
+            {
+                "uid": 13429,
+                "answer": "Вирус иммунодефицита человека (ВИЧ-1)",
+                "images": []
+            },
+            {
+                "uid": 15561,
+                "answer": "Вирус бешенства",
+                "images": []
+            },
+            {
+                "uid": 5348,
+                "answer": "Вирус кори",
+                "images": []
+            },
+            {
+                "uid": 17523,
+                "answer": "Вирус ветряной оспы",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Укажите механизм противовирусного действия альфа- и бета-интерферонов:",
+        "text_after": "",
+        "number": 12,
+        "images": [],
+        "answers": [
+            {
+                "uid": 17781,
+                "answer": "связывание с гемагглютинином вируса гриппа А, приводящее к невозможности связывания с остатками сиаловых кислот",
+                "images": []
+            },
+            {
+                "uid": 6557,
+                "answer": "ингибирование протеазы ВИЧ, приводящее к нарушению разрезания вирусных полипротеинов",
+                "images": []
+            },
+            {
+                "uid": 15385,
+                "answer": "связывание со специфичными рецепторами, приводящее к активации экспрессии множества генов, вовлеченных в противовирусный ответ",
+                "images": []
+            },
+            {
+                "uid": 20729,
+                "answer": "ингибирование нейраминидазы вируса гриппа, приводящее к нарушению высвобождения вирусных чистиц",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "TEXT",
+        "text": "Напишите латинское название любого из семейств плюс-РНК-содержащих вирусов, поражающих человека:",
+        "text_after": "",
+        "number": 13,
+        "images": [],
+        "answers": [],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Какой тип симметрии вирусного капсида представлен на данной трехмерной реконструкции?",
+        "text_after": "",
+        "number": 14,
+        "images": [
+            "6659a7e0dd2ea3.47623555.png"
+        ],
+        "answers": [
+            {
+                "uid": 19898,
+                "answer": "Икосаэдрический",
+                "images": []
+            },
+            {
+                "uid": 12535,
+                "answer": "Кольцевой",
+                "images": []
+            },
+            {
+                "uid": 21661,
+                "answer": "Спиральный",
+                "images": []
+            },
+            {
+                "uid": 3938,
+                "answer": "Двухцепочечный",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "На основании структуры противовирусного препарата предположите, какую группу вирусных белков он способен ингибировать?",
+        "text_after": "",
+        "number": 15,
+        "images": [
+            "6659a7e0d28290.01582710.png"
+        ],
+        "answers": [
+            {
+                "uid": 18574,
+                "answer": "нейраминидазы",
+                "images": []
+            },
+            {
+                "uid": 17599,
+                "answer": "полимеразы",
+                "images": []
+            },
+            {
+                "uid": 29249,
+                "answer": "белки слияния мембран",
+                "images": []
+            },
+            {
+                "uid": 27065,
+                "answer": "протеазы",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "MANY_FROM_MANY",
+        "text": "Вирусная РНК может синтезироваться в зараженных клетках:",
+        "text_after": "",
+        "number": 16,
+        "images": [],
+        "answers": [
+            {
+                "uid": 19825,
+                "answer": "по матрице белка с помощью обратной транскриптазы",
+                "images": []
+            },
+            {
+                "uid": 28792,
+                "answer": "по матрице ДНК с помощью ДНК-полимеразы",
+                "images": []
+            },
+            {
+                "uid": 350,
+                "answer": "по матрице белка с помощью РНК-полимеразы",
+                "images": []
+            },
+            {
+                "uid": 1189,
+                "answer": "по матрице РНК с помощью РНК-зависимой-РНК-полимеразы",
+                "images": []
+            },
+            {
+                "uid": 19914,
+                "answer": "по матрице ДНК с помощью РНК-полимеразы",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "MATCHING",
+        "text": "Установите соответствие между типом профилактической вакцины и заболеванием:",
+        "text_after": "",
+        "number": 17,
+        "images": [],
+        "answers": [
+            {
+                "uid": 32132,
+                "answer": "генно-инженерная вакцина",
+                "images": []
+            },
+            {
+                "uid": 26946,
+                "answer": "живая и инактивированная вакцины",
+                "images": []
+            },
+            {
+                "uid": 29737,
+                "answer": "плановая профилактика отсутствует",
+                "images": []
+            },
+            {
+                "uid": 4855,
+                "answer": "живая вакцина",
+                "images": []
+            },
+            {
+                "uid": 10880,
+                "answer": "инактивированная вакцина",
+                "images": []
+            }
+        ],
+        "answers_draggable": [
+            {
+                "uid": 0,
+                "answer": "профилактика кори",
+                "images": []
+            },
+            {
+                "uid": 1,
+                "answer": "профилактика герпеса",
+                "images": []
+            },
+            {
+                "uid": 2,
+                "answer": "профилактика гепатита B",
+                "images": []
+            },
+            {
+                "uid": 3,
+                "answer": "профилактика полиомиелита",
+                "images": []
+            },
+            {
+                "uid": 4,
+                "answer": "профилактика бешенства",
+                "images": []
+            }
+        ],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "TEXT",
+        "text": "Напишите латинское название семейства, к которому относится цитомегаловирус:",
+        "text_after": "",
+        "number": 18,
+        "images": [],
+        "answers": [],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Репликация генома у какого из перечисленных вирусных семейств осуществляется с помощью РНК-зависимой-РНК-полимеразы?",
+        "text_after": "",
+        "number": 19,
+        "images": [],
+        "answers": [
+            {
+                "uid": 24391,
+                "answer": "Coronaviridae",
+                "images": []
+            },
+            {
+                "uid": 449,
+                "answer": "Adenoviridae",
+                "images": []
+            },
+            {
+                "uid": 16123,
+                "answer": "Hepadnaviridae",
+                "images": []
+            },
+            {
+                "uid": 27325,
+                "answer": "Retroviridae",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Какой из перечисленных процессов обозначен знаком вопроса (?) в данной схеме стратегии репликации генома?",
+        "text_after": "",
+        "number": 20,
+        "images": [
+            "6659a7e10fa3a6.81662169.png"
+        ],
+        "answers": [
+            {
+                "uid": 20271,
+                "answer": "Конъюгация",
+                "images": []
+            },
+            {
+                "uid": 28202,
+                "answer": "Репарация",
+                "images": []
+            },
+            {
+                "uid": 19611,
+                "answer": "Терминация",
+                "images": []
+            },
+            {
+                "uid": 4487,
+                "answer": "Трансляция",
+                "images": []
+            },
+            {
+                "uid": 16432,
+                "answer": "Обратная транскрипция",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "TEXT",
+        "text": "Напишите латинское название семейства, к которому относятся вирусы гриппа:",
+        "text_after": "",
+        "number": 21,
+        "images": [],
+        "answers": [],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "MANY_FROM_MANY",
+        "text": "Какие из перечисленных инфекций вызываются вирусами?",
+        "text_after": "",
+        "number": 22,
+        "images": [],
+        "answers": [
+            {
+                "uid": 26626,
+                "answer": "малярия",
+                "images": []
+            },
+            {
+                "uid": 13036,
+                "answer": "краснуха",
+                "images": []
+            },
+            {
+                "uid": 23269,
+                "answer": "дизентерия",
+                "images": []
+            },
+            {
+                "uid": 19802,
+                "answer": "корь",
+                "images": []
+            },
+            {
+                "uid": 17551,
+                "answer": "дифтерия",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Выберите реакцию, которая не относится к серологическим:",
+        "text_after": "",
+        "number": 23,
+        "images": [],
+        "answers": [
+            {
+                "uid": 3339,
+                "answer": "метод иммунофлюоресценции",
+                "images": []
+            },
+            {
+                "uid": 32269,
+                "answer": "иммуноферментный анализ",
+                "images": []
+            },
+            {
+                "uid": 10562,
+                "answer": "реакция непрямой гемагглютинации",
+                "images": []
+            },
+            {
+                "uid": 9973,
+                "answer": "реакция прямой гемагглютинации",
+                "images": []
+            },
+            {
+                "uid": 18365,
+                "answer": "реакция преципитации",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Для какого из перечисленных семейств вирусов характерна данная схема проникновения вируса в клетку?",
+        "text_after": "",
+        "number": 24,
+        "images": [
+            "6659a7e0bfb5f7.72317208.png"
+        ],
+        "answers": [
+            {
+                "uid": 17932,
+                "answer": "Picornaviridae",
+                "images": []
+            },
+            {
+                "uid": 12400,
+                "answer": "Retroviridae",
+                "images": []
+            },
+            {
+                "uid": 24960,
+                "answer": "Paramyxoviridae",
+                "images": []
+            },
+            {
+                "uid": 31861,
+                "answer": "Herpesviridae",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Какому из перечисленных вирусов соответствует данная схема стратегии репликации генома?",
+        "text_after": "",
+        "number": 25,
+        "images": [
+            "6659a7e12ac803.34166531.png"
+        ],
+        "answers": [
+            {
+                "uid": 26064,
+                "answer": "Вирус гепатита B",
+                "images": []
+            },
+            {
+                "uid": 22956,
+                "answer": "Вирус гриппа А",
+                "images": []
+            },
+            {
+                "uid": 12865,
+                "answer": "Бактериофаг T4 энтеробактерий",
+                "images": []
+            },
+            {
+                "uid": 3567,
+                "answer": "Вирус иммунодефицита человека (ВИЧ-1)",
+                "images": []
+            },
+            {
+                "uid": 380,
+                "answer": "Вирус полиомиелита",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "В терапии какого из перечисленных заболеваний используют ингибиторы РНК-зависимой-РНК-полимеразы?",
+        "text_after": "",
+        "number": 26,
+        "images": [],
+        "answers": [
+            {
+                "uid": 19683,
+                "answer": "гепатит B",
+                "images": []
+            },
+            {
+                "uid": 21920,
+                "answer": "гепатит C",
+                "images": []
+            },
+            {
+                "uid": 1537,
+                "answer": "ВИЧ-инфекция",
+                "images": []
+            },
+            {
+                "uid": 23149,
+                "answer": "ветряная оспа",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "MATCHING",
+        "text": "Установите соответствие между инфекционным агентом и его описанием:",
+        "text_after": "",
+        "number": 27,
+        "images": [],
+        "answers": [
+            {
+                "uid": 22115,
+                "answer": "сложный вирус",
+                "images": []
+            },
+            {
+                "uid": 28450,
+                "answer": "вироид",
+                "images": []
+            },
+            {
+                "uid": 8894,
+                "answer": "простой вирус",
+                "images": []
+            },
+            {
+                "uid": 13410,
+                "answer": "прион",
+                "images": []
+            }
+        ],
+        "answers_draggable": [
+            {
+                "uid": 0,
+                "answer": "инфекционный белковый агент",
+                "images": []
+            },
+            {
+                "uid": 1,
+                "answer": "состоит из нуклеиновой кислоты и белкового капсида",
+                "images": []
+            },
+            {
+                "uid": 2,
+                "answer": "состоит из нуклеокапсида и оболочки с гликопротеинами",
+                "images": []
+            },
+            {
+                "uid": 3,
+                "answer": "инфекционная РНК",
+                "images": []
+            }
+        ],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Какой из перечисленных процессов обозначен знаком вопроса (?) в данной схеме стратегии репликации генома?",
+        "text_after": "",
+        "number": 28,
+        "images": [
+            "6659a7e10c77d0.77433901.png"
+        ],
+        "answers": [
+            {
+                "uid": 7842,
+                "answer": "Терминация",
+                "images": []
+            },
+            {
+                "uid": 13925,
+                "answer": "Репарация",
+                "images": []
+            },
+            {
+                "uid": 31787,
+                "answer": "Обратная транскрипция",
+                "images": []
+            },
+            {
+                "uid": 20296,
+                "answer": "Конъюгация",
+                "images": []
+            },
+            {
+                "uid": 4967,
+                "answer": "Трансляция",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Сердцевина вириона вируса гриппа содержит фермент:",
+        "text_after": "",
+        "number": 29,
+        "images": [],
+        "answers": [
+            {
+                "uid": 16503,
+                "answer": "гемагглютинин",
+                "images": []
+            },
+            {
+                "uid": 1872,
+                "answer": "нейраминидаза",
+                "images": []
+            },
+            {
+                "uid": 7913,
+                "answer": "РНК-зависимая РНК-полимераза",
+                "images": []
+            },
+            {
+                "uid": 24415,
+                "answer": "ДНК-зависимая РНК-полимераза",
+                "images": []
+            },
+            {
+                "uid": 6770,
+                "answer": "обратная транскриптаза",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": true,
+        "duration": null
+    },
+    {
+        "type": "TEXT",
+        "text": "Напишите латинское название семейства, к которому относится вирус иммунодефицита человека:",
+        "text_after": "",
+        "number": 0,
+        "images": [],
+        "answers": [],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "MANY_FROM_MANY",
+        "text": "Перечислите видимые проявления цитопатического действия вирусов на культуру клеток:",
+        "text_after": "",
+        "number": 1,
+        "images": [],
+        "answers": [
+            {
+                "uid": 11090,
+                "answer": "симпластообразование",
+                "images": []
+            },
+            {
+                "uid": 31833,
+                "answer": "гибель клеток, нарушение клеточного монослоя",
+                "images": []
+            },
+            {
+                "uid": 24233,
+                "answer": "образование включений",
+                "images": []
+            },
+            {
+                "uid": 9685,
+                "answer": "образование клеточного монослоя",
+                "images": []
+            },
+            {
+                "uid": 21782,
+                "answer": "трансформация клеток",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Укажите механизм противовирусного действия альфа- и бета-интерферонов:",
+        "text_after": "",
+        "number": 2,
+        "images": [],
+        "answers": [
+            {
+                "uid": 7489,
+                "answer": "ингибирование нейраминидазы вируса гриппа, приводящее к нарушению высвобождения вирусных чистиц",
+                "images": []
+            },
+            {
+                "uid": 27582,
+                "answer": "связывание со специфичными рецепторами, приводящее к активации экспрессии множества генов, вовлеченных в противовирусный ответ",
+                "images": []
+            },
+            {
+                "uid": 17005,
+                "answer": "ингибирование протеазы ВИЧ, приводящее к нарушению разрезания вирусных полипротеинов",
+                "images": []
+            },
+            {
+                "uid": 18938,
+                "answer": "связывание с гемагглютинином вируса гриппа А, приводящее к невозможности связывания с остатками сиаловых кислот",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Какому из перечисленных вирусов соответствует данная схема проникновения вируса в клетку?",
+        "text_after": "",
+        "number": 3,
+        "images": [
+            "6659a7e0bd40b4.73128305.png"
+        ],
+        "answers": [
+            {
+                "uid": 2109,
+                "answer": "Вирус полиомиелита",
+                "images": []
+            },
+            {
+                "uid": 29941,
+                "answer": "Вирус бешенства",
+                "images": []
+            },
+            {
+                "uid": 4456,
+                "answer": "Вирус гриппа А",
+                "images": []
+            },
+            {
+                "uid": 14739,
+                "answer": "ВИЧ-1",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "MATCHING",
+        "text": "Установите соответствие между типом профилактической вакцины и заболеванием:",
+        "text_after": "",
+        "number": 4,
+        "images": [],
+        "answers": [
+            {
+                "uid": 30722,
+                "answer": "живая и инактивированная вакцины",
+                "images": []
+            },
+            {
+                "uid": 14807,
+                "answer": "генно-инженерная вакцина",
+                "images": []
+            },
+            {
+                "uid": 11504,
+                "answer": "плановая профилактика отсутствует",
+                "images": []
+            },
+            {
+                "uid": 32706,
+                "answer": "живая вакцина",
+                "images": []
+            },
+            {
+                "uid": 27293,
+                "answer": "инактивированная вакцина",
+                "images": []
+            }
+        ],
+        "answers_draggable": [
+            {
+                "uid": 0,
+                "answer": "профилактика гепатита B",
+                "images": []
+            },
+            {
+                "uid": 1,
+                "answer": "профилактика бешенства",
+                "images": []
+            },
+            {
+                "uid": 2,
+                "answer": "профилактика полиомиелита",
+                "images": []
+            },
+            {
+                "uid": 3,
+                "answer": "профилактика кори",
+                "images": []
+            },
+            {
+                "uid": 4,
+                "answer": "профилактика герпеса",
+                "images": []
+            }
+        ],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Какому из перечисленных семейств вирусов соответствует данная схема стратегии репликации генома?",
+        "text_after": "",
+        "number": 5,
+        "images": [
+            "6659a7e1246743.45711669.png"
+        ],
+        "answers": [
+            {
+                "uid": 27789,
+                "answer": "Picornaviridae",
+                "images": []
+            },
+            {
+                "uid": 1597,
+                "answer": "Retroviridae",
+                "images": []
+            },
+            {
+                "uid": 27476,
+                "answer": "Rhabdoviridae",
+                "images": []
+            },
+            {
+                "uid": 20479,
+                "answer": "Hepadnaviridae",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Для изучения строения вирусов используется:",
+        "text_after": "",
+        "number": 6,
+        "images": [],
+        "answers": [
+            {
+                "uid": 5277,
+                "answer": "темнопольная микроскопия",
+                "images": []
+            },
+            {
+                "uid": 26699,
+                "answer": "микроскопия в затемненном поле",
+                "images": []
+            },
+            {
+                "uid": 17449,
+                "answer": "световая микроскопия окрашенных мазков-отпечатков",
+                "images": []
+            },
+            {
+                "uid": 26716,
+                "answer": "фазово-контрастная микроскопия",
+                "images": []
+            },
+            {
+                "uid": 12693,
+                "answer": "электронная микроскопия",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "MANY_FROM_MANY",
+        "text": "К ДНК-геномным вирусам относятся:",
+        "text_after": "",
+        "number": 7,
+        "images": [],
+        "answers": [
+            {
+                "uid": 29373,
+                "answer": "вирусы герпеса",
+                "images": []
+            },
+            {
+                "uid": 12672,
+                "answer": "вирусы гепатита В",
+                "images": []
+            },
+            {
+                "uid": 21704,
+                "answer": "вирусы гриппа",
+                "images": []
+            },
+            {
+                "uid": 1661,
+                "answer": "аденовирусы",
+                "images": []
+            },
+            {
+                "uid": 16848,
+                "answer": "вирусы гепатита А",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Противовирусный препарат осельтамивир является структурным аналогом сиаловой кислоты. На основании этого предположите его механизм действия:",
+        "text_after": "",
+        "number": 8,
+        "images": [],
+        "answers": [
+            {
+                "uid": 23316,
+                "answer": "ингибирование РНК-зависимой-РНК-полимеразы вируса гепатита C",
+                "images": []
+            },
+            {
+                "uid": 21275,
+                "answer": "ингибирование протеазы ВИЧ, приводящее к нарушению разрезания вирусных полипротеинов",
+                "images": []
+            },
+            {
+                "uid": 7420,
+                "answer": "связывание с молекулой CD4, препятствующее присоединению вирионов ВИЧ к поверхности клетки",
+                "images": []
+            },
+            {
+                "uid": 25765,
+                "answer": "ингибирование нейраминидазы вируса гриппа, приводящее к нарушению высвобождения вирусных чистиц",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Какому из перечисленных вирусов соответствует данная схема стратегии репликации генома?",
+        "text_after": "",
+        "number": 9,
+        "images": [
+            "6659a7e11542d2.53836631.png"
+        ],
+        "answers": [
+            {
+                "uid": 23179,
+                "answer": "Вирус иммунодефицита человека (ВИЧ-1)",
+                "images": []
+            },
+            {
+                "uid": 32315,
+                "answer": "Вирус простого герпеса",
+                "images": []
+            },
+            {
+                "uid": 21881,
+                "answer": "Вирус кори",
+                "images": []
+            },
+            {
+                "uid": 12029,
+                "answer": "Вирус полиомиелита",
+                "images": []
+            },
+            {
+                "uid": 13940,
+                "answer": "Вирус гепатита А",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Суперкапсид сложных вирусов образуется в процессе:",
+        "text_after": "",
+        "number": 10,
+        "images": [],
+        "answers": [
+            {
+                "uid": 27177,
+                "answer": "самосборки в цитоплазме клетки",
+                "images": []
+            },
+            {
+                "uid": 18026,
+                "answer": "расщепления полипротеинов вирусными протеазами",
+                "images": []
+            },
+            {
+                "uid": 27985,
+                "answer": "интеграции вирусной ДНК в геном клетки",
+                "images": []
+            },
+            {
+                "uid": 2566,
+                "answer": "отпочковывания вириона от одной из мембран клетки",
+                "images": []
+            },
+            {
+                "uid": 23822,
+                "answer": "синтеза интерферонов зараженными клетками",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "MATCHING",
+        "text": "﻿Установите соответствие между группой препаратов и основным механизмом действия:",
+        "text_after": "",
+        "number": 11,
+        "images": [],
+        "answers": [
+            {
+                "uid": 20533,
+                "answer": "аномальные нуклеозиды",
+                "images": []
+            },
+            {
+                "uid": 2019,
+                "answer": "альфа-интерфероны",
+                "images": []
+            },
+            {
+                "uid": 9998,
+                "answer": "специфические иммуноглобулины",
+                "images": []
+            },
+            {
+                "uid": 1276,
+                "answer": "ингибиторы протеаз",
+                "images": []
+            }
+        ],
+        "answers_draggable": [
+            {
+                "uid": 0,
+                "answer": "нейтрализация внеклеточных вирусных частиц",
+                "images": []
+            },
+            {
+                "uid": 1,
+                "answer": "нарушение нарезания вирусных полипротеинов",
+                "images": []
+            },
+            {
+                "uid": 2,
+                "answer": "ингибирование трансляции и разрушение мРНК",
+                "images": []
+            },
+            {
+                "uid": 3,
+                "answer": "ингибирование синтеза вирусных нуклеиновых кислот",
+                "images": []
+            }
+        ],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Какому из перечисленных вирусов соответствует данная схема строения вириона?",
+        "text_after": "",
+        "number": 12,
+        "images": [
+            "6659a7e1344b03.65307626.png"
+        ],
+        "answers": [
+            {
+                "uid": 6067,
+                "answer": "Вирус простого герпеса",
+                "images": []
+            },
+            {
+                "uid": 11506,
+                "answer": "Вирус полиомиелита",
+                "images": []
+            },
+            {
+                "uid": 21197,
+                "answer": "Вирус иммунодефицита человека (ВИЧ-1)",
+                "images": []
+            },
+            {
+                "uid": 5778,
+                "answer": "Вирус бешенства",
+                "images": []
+            },
+            {
+                "uid": 27477,
+                "answer": "Вирус гепатита А",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "TEXT",
+        "text": "Напишите латинское название семейства, к которому относится вирус бешенства:",
+        "text_after": "",
+        "number": 13,
+        "images": [],
+        "answers": [],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Определите таксономическое положение вируса гриппа:",
+        "text_after": "",
+        "number": 14,
+        "images": [],
+        "answers": [
+            {
+                "uid": 11672,
+                "answer": "Семейство Picornaviridae род Morbillivirus",
+                "images": []
+            },
+            {
+                "uid": 12901,
+                "answer": "Семейство Paramyxoviridae род Morbillivirus",
+                "images": []
+            },
+            {
+                "uid": 1507,
+                "answer": "Семейство Coronaviridae род Influenzavirus",
+                "images": []
+            },
+            {
+                "uid": 16186,
+                "answer": "Семейство Orthomyxoviridae род Influenzavirus",
+                "images": []
+            },
+            {
+                "uid": 13411,
+                "answer": "Семейство Retroviridae род Influenzavirus",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "MANY_FROM_MANY",
+        "text": "К простым плюс-РНК-содержащим вирусам семейства Picornaviridae относятся:",
+        "text_after": "",
+        "number": 15,
+        "images": [],
+        "answers": [
+            {
+                "uid": 13107,
+                "answer": "вирус гепатита B",
+                "images": []
+            },
+            {
+                "uid": 2666,
+                "answer": "вирус гепатита A",
+                "images": []
+            },
+            {
+                "uid": 9368,
+                "answer": "вирус кори",
+                "images": []
+            },
+            {
+                "uid": 31068,
+                "answer": "вирус иммунодефицита человека",
+                "images": []
+            },
+            {
+                "uid": 29031,
+                "answer": "вирус полиомиелита",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Ацикловир, рибавирин и азидотимидин являются:",
+        "text_after": "",
+        "number": 16,
+        "images": [],
+        "answers": [
+            {
+                "uid": 8442,
+                "answer": "алкалоидами растительного происхождения",
+                "images": []
+            },
+            {
+                "uid": 13235,
+                "answer": "аналогами нуклеозидов с измененной структурой пентозы или азотистого основания",
+                "images": []
+            },
+            {
+                "uid": 9922,
+                "answer": "крупными эукариотическими белками",
+                "images": []
+            },
+            {
+                "uid": 3211,
+                "answer": "антибиотиками группы оксазолидинонов",
+                "images": []
+            },
+            {
+                "uid": 22992,
+                "answer": "солями тяжелых металлов",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "MATCHING",
+        "text": "Установите соответствие между вирусом и таксономической категорией:",
+        "text_after": "",
+        "number": 17,
+        "images": [],
+        "answers": [
+            {
+                "uid": 24412,
+                "answer": "вирус гепатита Е",
+                "images": []
+            },
+            {
+                "uid": 16595,
+                "answer": "вирус гепатита C",
+                "images": []
+            },
+            {
+                "uid": 8985,
+                "answer": "вирус гепатита В",
+                "images": []
+            },
+            {
+                "uid": 25326,
+                "answer": "вирус гепатита А",
+                "images": []
+            }
+        ],
+        "answers_draggable": [
+            {
+                "uid": 0,
+                "answer": "семейство Picornaviridae",
+                "images": []
+            },
+            {
+                "uid": 1,
+                "answer": "семейство Hepeviridae",
+                "images": []
+            },
+            {
+                "uid": 2,
+                "answer": "семейство Flaviviridae",
+                "images": []
+            },
+            {
+                "uid": 3,
+                "answer": "семейство Hepadnaviridae",
+                "images": []
+            }
+        ],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Какому из перечисленных вирусов соответствует данная схема стратегии репликации генома?",
+        "text_after": "",
+        "number": 18,
+        "images": [
+            "6659a7e112b0c6.78608759.png"
+        ],
+        "answers": [
+            {
+                "uid": 881,
+                "answer": "Вирус иммунодефицита человека (ВИЧ-1)",
+                "images": []
+            },
+            {
+                "uid": 28937,
+                "answer": "Вирус простого герпеса",
+                "images": []
+            },
+            {
+                "uid": 4219,
+                "answer": "Вирус кори",
+                "images": []
+            },
+            {
+                "uid": 8600,
+                "answer": "Вирус бешенства",
+                "images": []
+            },
+            {
+                "uid": 7974,
+                "answer": "Вирус полиомиелита",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "TEXT",
+        "text": "Напишите латинское название любого семейства, к которому относятся сложные (оболочечные) вирусы, поражающие человека:",
+        "text_after": "",
+        "number": 19,
+        "images": [],
+        "answers": [],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Какому из перечисленных вирусов соответствует данная схема проникновения вируса в клетку?",
+        "text_after": "",
+        "number": 20,
+        "images": [
+            "6659a7e0c358b1.60093039.png"
+        ],
+        "answers": [
+            {
+                "uid": 7766,
+                "answer": "Вирус гепатита А",
+                "images": []
+            },
+            {
+                "uid": 28593,
+                "answer": "Вирус полиомиелита",
+                "images": []
+            },
+            {
+                "uid": 32695,
+                "answer": "Ротавирус А",
+                "images": []
+            },
+            {
+                "uid": 8521,
+                "answer": "Вирус гриппа А",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "TEXT",
+        "text": "Напишите латинское название любого из семейств вирусов, поражающих человека и содержащих одноцепочечную РНК:",
+        "text_after": "",
+        "number": 21,
+        "images": [],
+        "answers": [],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Нуклеозидные аналоги тенофовир и энтекавир, применяемые для лечения вирусного гепатита В, в качестве мишени используют:",
+        "text_after": "",
+        "number": 22,
+        "images": [],
+        "answers": [
+            {
+                "uid": 31153,
+                "answer": "вирусную протеазу",
+                "images": []
+            },
+            {
+                "uid": 24057,
+                "answer": "HBc-антиген",
+                "images": []
+            },
+            {
+                "uid": 21658,
+                "answer": "HBs-антиген",
+                "images": []
+            },
+            {
+                "uid": 1529,
+                "answer": "вирусную полимеразу",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Какому из перечисленных вирусов соответствует данная схема стратегии репликации генома?",
+        "text_after": "",
+        "number": 23,
+        "images": [
+            "6659a7e12c5697.20749458.png"
+        ],
+        "answers": [
+            {
+                "uid": 10948,
+                "answer": "Вирус иммунодефицита человека (ВИЧ-1)",
+                "images": []
+            },
+            {
+                "uid": 185,
+                "answer": "Вирус гепатита B",
+                "images": []
+            },
+            {
+                "uid": 26151,
+                "answer": "Ротавирус А",
+                "images": []
+            },
+            {
+                "uid": 19404,
+                "answer": "Вирус гриппа А",
+                "images": []
+            },
+            {
+                "uid": 10901,
+                "answer": "Вирус полиомиелита",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "MANY_FROM_MANY",
+        "text": "Выберите характеристики вириона вируса гепатита В:",
+        "text_after": "",
+        "number": 24,
+        "images": [],
+        "answers": [
+            {
+                "uid": 27246,
+                "answer": "вирус имеет многослойный капсид",
+                "images": []
+            },
+            {
+                "uid": 10956,
+                "answer": "геном представлен кольцевой ДНК с незавершенной двухцепочечной структурой",
+                "images": []
+            },
+            {
+                "uid": 10899,
+                "answer": "вирус имеет капсид икосаэдрической симметрии",
+                "images": []
+            },
+            {
+                "uid": 21742,
+                "answer": "вирус содержит липидную оболочку",
+                "images": []
+            },
+            {
+                "uid": 20677,
+                "answer": "вирус безоболочечный",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Какому из перечисленных вирусов соответствует данная схема строения вириона?",
+        "text_after": "",
+        "number": 25,
+        "images": [
+            "6659a7e13edf05.12507204.png"
+        ],
+        "answers": [
+            {
+                "uid": 14789,
+                "answer": "Вирус иммунодефицита человека (ВИЧ-1)",
+                "images": []
+            },
+            {
+                "uid": 11232,
+                "answer": "Вирус гепатита А",
+                "images": []
+            },
+            {
+                "uid": 13664,
+                "answer": "Вирус кори",
+                "images": []
+            },
+            {
+                "uid": 15221,
+                "answer": "Цитомегаловирус",
+                "images": []
+            },
+            {
+                "uid": 5711,
+                "answer": "Вирус бешенства",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "MATCHING",
+        "text": "Установите соответствие между вирусом и типом нуклеиновой кислоты:",
+        "text_after": "",
+        "number": 26,
+        "images": [],
+        "answers": [
+            {
+                "uid": 22858,
+                "answer": "вирус полиомиелита",
+                "images": []
+            },
+            {
+                "uid": 23705,
+                "answer": "ротавирус",
+                "images": []
+            },
+            {
+                "uid": 5913,
+                "answer": "вирус бешенства",
+                "images": []
+            },
+            {
+                "uid": 25677,
+                "answer": "вирус гриппа",
+                "images": []
+            },
+            {
+                "uid": 24562,
+                "answer": "вирус простого герпеса",
+                "images": []
+            }
+        ],
+        "answers_draggable": [
+            {
+                "uid": 0,
+                "answer": "одноцепочечная несегментированная -РНК",
+                "images": []
+            },
+            {
+                "uid": 1,
+                "answer": "одноцепочечная сегментированная -РНК",
+                "images": []
+            },
+            {
+                "uid": 2,
+                "answer": "одноцепочечная +РНК",
+                "images": []
+            },
+            {
+                "uid": 3,
+                "answer": "двухцепочечная РНК",
+                "images": []
+            },
+            {
+                "uid": 4,
+                "answer": "двухцепочечная ДНК",
+                "images": []
+            }
+        ],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Для какого из перечисленных вирусов характерна способность встраиваться в хромосомы человека?",
+        "text_after": "",
+        "number": 27,
+        "images": [],
+        "answers": [
+            {
+                "uid": 9906,
+                "answer": "вирус гепатита A",
+                "images": []
+            },
+            {
+                "uid": 24456,
+                "answer": "вирус полиомиелита",
+                "images": []
+            },
+            {
+                "uid": 8749,
+                "answer": "вирус иммунодефицита человека",
+                "images": []
+            },
+            {
+                "uid": 15618,
+                "answer": "вирус бешенства",
+                "images": []
+            },
+            {
+                "uid": 27555,
+                "answer": "вирус гриппа",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "MATCHING",
+        "text": "Установите соответствие между вирусом и морфологией вириона:",
+        "text_after": "",
+        "number": 28,
+        "images": [],
+        "answers": [
+            {
+                "uid": 5083,
+                "answer": "вирус гепатита А",
+                "images": []
+            },
+            {
+                "uid": 7172,
+                "answer": "вирус иммунодефицита человека",
+                "images": []
+            },
+            {
+                "uid": 25859,
+                "answer": "ротавирус",
+                "images": []
+            },
+            {
+                "uid": 31685,
+                "answer": "вирус гриппа",
+                "images": []
+            },
+            {
+                "uid": 24750,
+                "answer": "вирус гепатита В",
+                "images": []
+            }
+        ],
+        "answers_draggable": [
+            {
+                "uid": 0,
+                "answer": "сложный (оболочечный), икосаэдрический тип симметрии капсида, ДНК геномный",
+                "images": []
+            },
+            {
+                "uid": 1,
+                "answer": "сложный (оболочечный), спиральный тип симметрии, -РНК геномный",
+                "images": []
+            },
+            {
+                "uid": 2,
+                "answer": "простой (безоболочечный), многослойный белковый капсид, РНК геномный",
+                "images": []
+            },
+            {
+                "uid": 3,
+                "answer": "простой (безоболочечный), икосаэдрический тип симметрии капсида, +РНК геномный",
+                "images": []
+            },
+            {
+                "uid": 4,
+                "answer": "сложный (оболочечный), икосаэдрический тип симметрии капсида, РНК геномный",
+                "images": []
+            }
+        ],
+        "is_last_question": false,
+        "duration": null
+    },
+    {
+        "type": "ONE_FROM_MANY",
+        "text": "Какой тип симметрии вирусного капсида представлен на данной трехмерной реконструкции?",
+        "text_after": "",
+        "number": 29,
+        "images": [
+            "6659a7e0e3b888.41380710.png"
+        ],
+        "answers": [
+            {
+                "uid": 25027,
+                "answer": "Спиральный",
+                "images": []
+            },
+            {
+                "uid": 28688,
+                "answer": "Икосаэдрический",
+                "images": []
+            },
+            {
+                "uid": 14882,
+                "answer": "Кольцевой",
+                "images": []
+            },
+            {
+                "uid": 19244,
+                "answer": "Двухцепочечный",
+                "images": []
+            }
+        ],
+        "answers_draggable": [],
+        "is_last_question": true,
+        "duration": null
+    }
+]

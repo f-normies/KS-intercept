@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.png" type="image/png">
+    <meta name="csrf-token" content="bgB1EzmB2pIzm9JtEsm3X5zkAdtcGxtpN3RDr8u1">
+
+    <title>Личный кабинет студента</title>
+
+    <script src="/js/manifest.js?id=12614f54ea5bf081d7bb"></script>
+    <script src="/js/vendor.js?id=be883ac8e532805feb12" defer></script>
+    <script src="/js/app.js?id=74758d4c71239d811c64" defer></script>
+
+    
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="stylesheet" href="/css/materialdesignicons.min.css">
+
+    <link href="/css/vendor.css?id=1b96085150248d15561f" rel="stylesheet">
+    <link href="/css/app.css?id=ea1f68279046c4c6e913" rel="stylesheet">
+
+                        <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(70439494, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+    });
+
+    </script>
+<noscript><div><img src="https://mc.yandex.ru/watch/70439494" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+            </head>
+<body>
+<div id="app">
+
+    <div class="container is-fluid is-gapless rsmu-logo">
+    <div class="container">
+        <div class="level">
+            <div class="level-left">
+                <div class="level-item">
+                    <img src="/img/rsmu_logo.svg" class="rsmu-logo-img">
+                    <p class="is-size-4 rsmu-logo-text">РНИМУ им.&nbsp;Н.И.&nbsp;Пирогова</p>
+                </div>
+            </div>
+
+            
+            <div class="level-right is-hidden-touch">
+                <p class="level-item">
+                    <a class="lang-switch" href="/lang/en">En</a>
+
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="container is-fluid menu-line">
+        <div class="container">
+            <b-navbar>
+                <template slot="brand">
+                    <b-navbar-item href="https://ks2.rsmu.ru" class="dashboard-logo">
+                        <b-tooltip label="ЛК студента">
+                            <b-icon icon="home"></b-icon>
+                        </b-tooltip>
+                    </b-navbar-item>
+
+                    
+                    <div class="mobile-lang-switch is-hidden-desktop">
+                        <a class="lang-switch" href="/lang/en">En</a>
+
+                    </div>
+                </template>
+
+                
+                <template slot="start">
+                    <b-navbar-item href="/student">Студент</b-navbar-item>    <b-navbar-dropdown label="Тесты" hoverable collapsible>
+      <b-menu >
+        <b-menu-list label=""><b-navbar-item href="/tests2/tests_list">Самостоятельные тесты</b-navbar-item><b-navbar-item href="/tests2/control_test">Контрольные тесты</b-navbar-item>         </b-menu-list>
+       </b-menu>
+    </b-navbar-dropdown>    <b-navbar-dropdown label="Успеваемость" hoverable collapsible>
+      <b-menu >
+        <b-menu-list label=""><b-menu-item label="Рейтинг" expanded><b-navbar-item href="/performance/rating/current_rating">Текущий рейтинг</b-navbar-item><b-navbar-item href="/performance/rating/semester_rating">Семестровый рейтинг до сентября 2020</b-navbar-item><b-navbar-item href="/performance/rating/semester_rating_2020">Семестровый рейтинг после сентября 2020</b-navbar-item><b-navbar-item href="/performance/rating/exam_rating">Экзаменационный рейтинг</b-navbar-item></b-menu-item><b-menu-item label="Промежуточная аттестация" expanded><b-navbar-item href="/performance/midterms_grade/results">Результаты</b-navbar-item><b-navbar-item href="/performance/midterms_grade/competencies">Компетенции</b-navbar-item></b-menu-item>         </b-menu-list>
+       </b-menu>
+    </b-navbar-dropdown>    <b-navbar-dropdown label="Учебные материалы" hoverable collapsible>
+      <b-menu >
+        <b-menu-list label=""><b-navbar-item href="/education_materials/files">Файлы</b-navbar-item><b-navbar-item href="/education_materials/video">Видеолекции</b-navbar-item>         </b-menu-list>
+       </b-menu>
+    </b-navbar-dropdown><b-navbar-item href="/papers">Сдать работу</b-navbar-item><b-navbar-item class="is-hidden-desktop" href="/instructions">Инструкции</b-navbar-item><b-navbar-item class="is-hidden-touch" href="/instructions"><b-tooltip label="Инструкции"><b-icon icon="help-box" type="is-rsmu-green"></b-icon></b-tooltip></b-navbar-item><b-navbar-item class="is-hidden-desktop" href="/messages">Сообщения</b-navbar-item><b-navbar-item class="is-hidden-touch" href="/messages"><b-tooltip label="Сообщения"><b-icon icon="message-text" type="is-rsmu-green"></b-icon></b-tooltip></b-navbar-item>
+                </template>
+
+                <template slot="end">
+                    <form ref="logoutForm" id="logout-form" action="https://ks2.rsmu.ru/logout?user=zakharov_os" method="POST"
+                          style="display: none;">
+                        <input type="hidden" name="_token" value="bgB1EzmB2pIzm9JtEsm3X5zkAdtcGxtpN3RDr8u1">                    </form>
+
+                    
+                    <b-navbar-item
+                        tag="div"
+                        class="is-hidden-touch"
+                            >
+                        <figure class="image is-48x48 user-photo">
+                            <user-photo
+            v-bind:user-photo="'00746FD35B6C4356A1A4B9D2492DA2D7.jpg'"
+            v-bind:photo-path="'https://aos.rsmu.ru/upload/l_person_photo/'"
+            v-bind:user-name="'Захаров Олег Станиславович'"
+    ></user-photo>
+                        </figure>
+                        <b-dropdown aria-role="list" position="is-bottom-left">
+                            <a class="navbar-link pl-0" slot="trigger">
+                                <span class="is-hidden-desktop-only is-hidden-touch pl-1">Захаров Олег Станиславович</span>
+                            </a>
+
+                            <b-dropdown-item aria-role="listitem" v-on:click="$refs.logoutForm.submit();">
+                                <b-icon icon="logout"></b-icon>
+                                &nbsp;Выйти
+                            </b-dropdown-item>
+
+                            <b-dropdown-item aria-role="listitem" has-link>
+                                <a href="https://ks2.rsmu.ru/user/change_password">
+                                    <b-icon icon="lock-reset"></b-icon>
+                                    &nbsp;Изменить пароль
+                                </a>
+                            </b-dropdown-item>
+
+                            
+                            
+                        </b-dropdown>
+
+                    </b-navbar-item>
+
+                    
+                    <b-navbar-item v-on:click="$refs.logoutForm.submit();" class="is-hidden-desktop">
+                        Выйти
+                    </b-navbar-item>
+                    <b-navbar-item href="https://ks2.rsmu.ru/user/change_password" class="is-hidden-desktop">
+                        Изменить пароль
+                    </b-navbar-item>
+
+                </template>
+            </b-navbar>
+        </div>
+    </div>
+
+
+    
+
+    <div class="container">
+        <h1 class="title is-3 is-size-2-desktop has-text-centered has-text-weight-normal px-2 ">Самостоятельные тесты</h1>
+            </div>
+
+
+    <main class="section">
+            <div class="container tests-list">
+        <questions
+            v-bind:locale="'ru'"
+            v-bind:test-info='{"name":"Текущий рубежный (модульный) контроль по теме 6. Вирусология","questions_count":30,"duration":20,"id":"c44ee3581b6ec39ba2b0c96e314b1114"}'
+            v-bind:remaining-time="1200"
+            v-bind:question-remaining-time="0"
+            v-bind:image_path="'https://ks.rsmu.ru/upload/l_btz_fileanswer/'"
+            v-bind:question_image_path="'https://ks.rsmu.ru/upload/l_btz_filequestion/'"
+            v-bind:questions='[{"type":3,"text":"Напишите латинское название семейства, к которому относится цитомегаловирус:","text_after":"","number":0,"images":[],"answers":[],"answers_draggable":[],"is_last_question":false,"duration":null},{"type":1,"text":"Каким методом можно выявить ДНК вирусных частиц в биологическом материале?","text_after":"","number":1,"images":[],"answers":[{"uid":28819,"answer":"полимеразная цепная реакция","images":[]},{"uid":29999,"answer":"бактериологический метод","images":[]},{"uid":31243,"answer":"реакция непрямой гемагглютинации","images":[]},{"uid":26439,"answer":"реакция иммунофлюоресценции","images":[]},{"uid":21622,"answer":"иммуноферментный анализ","images":[]}],"answers_draggable":[],"is_last_question":false,"duration":null},{"type":1,"text":"Препарат диданозин является аналогом дезоксиаденозина, у которого отсутствует 3\u0027-OH группа. На основании этого предположите его механизм действия:","text_after":"","number":2,"images":[],"answers":[{"uid":18276,"answer":"ингибирование протеазы ВИЧ, приводящее к нарушению разрезания вирусных полипротеинов","images":[]},{"uid":9315,"answer":"связывание с молекулой CD4, препятствующее присоединению вирионов ВИЧ к поверхности клетки","images":[]},{"uid":16726,"answer":"встраивание в растущую цепь ДНК, синтезируемую обратной транскриптазой ВИЧ, после чего синтез не может быть продолжен","images":[]},{"uid":9329,"answer":"связывание с гемагглютинином вируса гриппа А, приводящее к невозможности связывания с остатками сиаловых кислот","images":[]}],"answers_draggable":[],"is_last_question":false,"duration":null},{"type":1,"text":"Какому из перечисленных вирусов соответствует данная схема стратегии репликации генома?","text_after":"","number":3,"images":["6659a7e117f2a5.57496304.png"],"answers":[{"uid":20771,"answer":"Вирус иммунодефицита человека (ВИЧ-1)","images":[]},{"uid":18788,"answer":"Вирус бешенства","images":[]},{"uid":21511,"answer":"Вирус простого герпеса","images":[]},{"uid":30143,"answer":"Вирус кори","images":[]},{"uid":31170,"answer":"Вирус клещевого энцефалита","images":[]}],"answers_draggable":[],"is_last_question":false,"duration":null},{"type":4,"text":"Установите соответствие между вирусом и морфологией вириона:","text_after":"","number":4,"images":[],"answers":[{"uid":11388,"answer":"ротавирус","images":[]},{"uid":25168,"answer":"вирус гепатита А","images":[]},{"uid":27939,"answer":"вирус иммунодефицита человека","images":[]},{"uid":18016,"answer":"вирус гриппа","images":[]},{"uid":26705,"answer":"вирус гепатита В","images":[]}],"answers_draggable":[{"uid":0,"answer":"сложный (оболочечный), спиральный тип симметрии, -РНК геномный","images":[]},{"uid":1,"answer":"сложный (оболочечный), икосаэдрический тип симметрии капсида, ДНК геномный","images":[]},{"uid":2,"answer":"простой (безоболочечный), икосаэдрический тип симметрии капсида, +РНК геномный","images":[]},{"uid":3,"answer":"сложный (оболочечный), икосаэдрический тип симметрии капсида, РНК геномный","images":[]},{"uid":4,"answer":"простой (безоболочечный), многослойный белковый капсид, РНК геномный","images":[]}],"is_last_question":false,"duration":null},{"type":2,"text":"К простым плюс-РНК-содержащим вирусам семейства Picornaviridae относятся:","text_after":"","number":5,"images":[],"answers":[{"uid":29918,"answer":"вирус иммунодефицита человека","images":[]},{"uid":32651,"answer":"вирус полиомиелита","images":[]},{"uid":24159,"answer":"вирус кори","images":[]},{"uid":8504,"answer":"вирус гепатита A","images":[]},{"uid":16853,"answer":"вирус гепатита B","images":[]}],"answers_draggable":[],"is_last_question":false,"duration":null},{"type":1,"text":"На схеме представлено устройство вирусной частицы. Какое из представленных описаний наиболее ей соответствует?","text_after":"","number":6,"images":["6659a7e1002ce2.20458151.png"],"answers":[{"uid":16029,"answer":"Простой (безоболочечный) вирус с сегментированным ДНК-геномом","images":[]},{"uid":15617,"answer":"Сложный (оболочечный) вирус с сегментированным ДНК-геномом","images":[]},{"uid":4606,"answer":"Простой (безоболочечный) вирус с несегментированным ДНК-геномом","images":[]},{"uid":20205,"answer":"Сложный (оболочечный) вирус с несегментированным ДНК-геномом","images":[]}],"answers_draggable":[],"is_last_question":false,"duration":null},{"type":1,"text":"Интерфероны являются:","text_after":"","number":7,"images":[],"answers":[{"uid":21606,"answer":"аномальными нуклеозидами","images":[]},{"uid":25933,"answer":"производными салициловой кислоты","images":[]},{"uid":31255,"answer":"малыми белками","images":[]},{"uid":22300,"answer":"кольцевыми молекулами ДНК","images":[]},{"uid":730,"answer":"участками ДНК вируса","images":[]}],"answers_draggable":[],"is_last_question":false,"duration":null},{"type":1,"text":"Какому из перечисленных вирусов соответствует данная схема стратегии репликации генома?","text_after":"","number":8,"images":["6659a7e11e1896.01306696.png"],"answers":[{"uid":23765,"answer":"Вирус полиомиелита","images":[]},{"uid":20119,"answer":"Вирус гепатита А","images":[]},{"uid":15044,"answer":"Вирус гриппа А","images":[]},{"uid":25806,"answer":"Вирус ветряной оспы","images":[]},{"uid":22834,"answer":"Вирус иммунодефицита человека (ВИЧ-1)","images":[]}],"answers_draggable":[],"is_last_question":false,"duration":null},{"type":4,"text":"Установите соответствие между вирусом и таксономической категорией:","text_after":"","number":9,"images":[],"answers":[{"uid":12384,"answer":"вирус SARS-CoV-2","images":[]},{"uid":15249,"answer":"вирус кори","images":[]},{"uid":26355,"answer":"вирус клещевого энцефалита","images":[]},{"uid":31868,"answer":"вирус гриппа","images":[]},{"uid":19211,"answer":"вирус бешенства","images":[]}],"answers_draggable":[{"uid":0,"answer":"Flaviviridae","images":[]},{"uid":1,"answer":"Rhabdoviridae","images":[]},{"uid":2,"answer":"Coronaviridae","images":[]},{"uid":3,"answer":"Orthomyxoviridae","images":[]},{"uid":4,"answer":"Paramyxoviridae","images":[]}],"is_last_question":false,"duration":null},{"type":1,"text":"Какой тип симметрии вирусного капсида представлен на данной трехмерной реконструкции?","text_after":"","number":10,"images":["6659a7e0d6efb4.68527591.png"],"answers":[{"uid":29450,"answer":"Кольцевой","images":[]},{"uid":4039,"answer":"Икосаэдрический","images":[]},{"uid":3007,"answer":"Спиральный","images":[]},{"uid":16270,"answer":"Двухцепочечный","images":[]}],"answers_draggable":[],"is_last_question":false,"duration":null},{"type":3,"text":"Напишите латинское название семейства, к которому относится вирус гепатита В:","text_after":"","number":11,"images":[],"answers":[],"answers_draggable":[],"is_last_question":false,"duration":null},{"type":1,"text":"Укажите, к какому семейству относят вирус бешенства:","text_after":"","number":12,"images":[],"answers":[{"uid":2933,"answer":"Retroviridae","images":[]},{"uid":5773,"answer":"Rhabdoviridae","images":[]},{"uid":5952,"answer":"Flaviviridae","images":[]},{"uid":27903,"answer":"Paramyxoviridae","images":[]},{"uid":17110,"answer":"Picornaviridae","images":[]}],"answers_draggable":[],"is_last_question":false,"duration":null},{"type":2,"text":"Культивирование вирусов в условиях лаборатории осуществляют с использованием:","text_after":"","number":13,"images":[],"answers":[{"uid":6861,"answer":"куриных эмбрионов","images":[]},{"uid":13400,"answer":"бактериологических плотных питательных сред","images":[]},{"uid":31508,"answer":"бактериологических жидких питательных сред","images":[]},{"uid":26565,"answer":"клеточных культур млекопитающих","images":[]},{"uid":29808,"answer":"лабораторных животных","images":[]}],"answers_draggable":[],"is_last_question":false,"duration":null},{"type":3,"text":"Напишите латинское название семейства, к которому относятся вирусы гепатита С:","text_after":"","number":14,"images":[],"answers":[],"answers_draggable":[],"is_last_question":false,"duration":null},{"type":4,"text":"Установите соответствие между инфекционным агентом и его описанием:","text_after":"","number":15,"images":[],"answers":[{"uid":27664,"answer":"простой вирус","images":[]},{"uid":31024,"answer":"вироид","images":[]},{"uid":24014,"answer":"сложный вирус","images":[]},{"uid":19913,"answer":"прион","images":[]}],"answers_draggable":[{"uid":0,"answer":"инфекционная РНК","images":[]},{"uid":1,"answer":"состоит из нуклеокапсида и оболочки с гликопротеинами","images":[]},{"uid":2,"answer":"инфекционный белковый агент","images":[]},{"uid":3,"answer":"состоит из нуклеиновой кислоты и белкового капсида","images":[]}],"is_last_question":false,"duration":null},{"type":1,"text":"Какому из перечисленных вирусов соответствует данная схема стратегии репликации генома?","text_after":"","number":16,"images":["6659a7e1234955.53555216.png"],"answers":[{"uid":23272,"answer":"Вирус гепатита А","images":[]},{"uid":30741,"answer":"Вирус гепатита B","images":[]},{"uid":18177,"answer":"Вирус ветряной оспы","images":[]},{"uid":18305,"answer":"Вирус простого герпеса","images":[]},{"uid":24533,"answer":"Вирус полиомиелита","images":[]}],"answers_draggable":[],"is_last_question":false,"duration":null},{"type":2,"text":"Выберите возможные механизмы участия специфических антител в защите организма от вирусов:","text_after":"","number":17,"images":[],"answers":[{"uid":9066,"answer":"антитело-зависимая клеточно-опосредованная цитотоксичность","images":[]},{"uid":32738,"answer":"ферментативный гидролиз белков капсида","images":[]},{"uid":11838,"answer":"опсонизация вирусных частиц","images":[]},{"uid":17611,"answer":"пространственная блокада вирусных прикрепительных белков","images":[]},{"uid":5485,"answer":"лизис инфицированных клеток с участием комплемента","images":[]}],"answers_draggable":[],"is_last_question":false,"duration":null},{"type":1,"text":"Терапия ВИЧ-инфекции:","text_after":"","number":18,"images":[],"answers":[{"uid":9345,"answer":"проводится ингибиторами РНК-зависимой-РНК-полимеразы","images":[]},{"uid":10971,"answer":"не разработана","images":[]},{"uid":19375,"answer":"проводится комбинациями антиретровирусных препаратов","images":[]},{"uid":21865,"answer":"проводится ингибиторами нейраминидазы","images":[]}],"answers_draggable":[],"is_last_question":false,"duration":null},{"type":1,"text":"Определите таксономическое положение вируса гриппа:","text_after":"","number":19,"images":[],"answers":[{"uid":30532,"answer":"Семейство Orthomyxoviridae род Influenzavirus","images":[]},{"uid":31988,"answer":"Семейство Coronaviridae род Influenzavirus","images":[]},{"uid":27057,"answer":"Семейство Picornaviridae род Morbillivirus","images":[]},{"uid":11624,"answer":"Семейство Paramyxoviridae род Morbillivirus","images":[]},{"uid":21597,"answer":"Семейство Retroviridae род Influenzavirus","images":[]}],"answers_draggable":[],"is_last_question":false,"duration":null},{"type":1,"text":"На схеме представлено устройство вирусной частицы. Какое из представленных описаний наиболее ей соответствует?","text_after":"","number":20,"images":["6659a7e0ef7857.67416853.png"],"answers":[{"uid":14172,"answer":"Сложный (оболочечный) вирус с сегментированным РНК-геномом","images":[]},{"uid":22872,"answer":"Сложный (оболочечный) вирус с несегментированным РНК-геномом","images":[]},{"uid":28379,"answer":"Простой (безоболочечный) вирус с несегментированным РНК-геномом","images":[]},{"uid":30956,"answer":"Простой (безоболочечный) вирус с сегментированным РНК-геномом","images":[]}],"answers_draggable":[],"is_last_question":false,"duration":null},{"type":3,"text":"Напишите латинское название семейства, к которому относится вирус иммунодефицита человека:","text_after":"","number":21,"images":[],"answers":[],"answers_draggable":[],"is_last_question":false,"duration":null},{"type":1,"text":"Назовите группу препаратов, основным механизмом действия которых является ингибирование вирусных полимераз:","text_after":"","number":22,"images":[],"answers":[{"uid":8513,"answer":"салицилаты (ацетилсалициловая кислота)","images":[]},{"uid":3516,"answer":"производные адамантана (амантадин, римантадин)","images":[]},{"uid":19174,"answer":"пенициллины (оксациллин, метициллин)","images":[]},{"uid":30328,"answer":"анилиды (парацетамол)","images":[]},{"uid":12379,"answer":"аномальные нуклеозиды (ацикловир, азидотимидин)","images":[]}],"answers_draggable":[],"is_last_question":false,"duration":null},{"type":1,"text":"Какому из перечисленных вирусов соответствует данная схема проникновения вируса в клетку?","text_after":"","number":23,"images":["6659a7e0c5fed8.85865755.png"],"answers":[{"uid":14942,"answer":"Ротавирус А","images":[]},{"uid":6844,"answer":"Вирус гепатита А","images":[]},{"uid":16501,"answer":"Вирус эпидемического паротита","images":[]},{"uid":28733,"answer":"Вирус полиомиелита","images":[]}],"answers_draggable":[],"is_last_question":false,"duration":null},{"type":2,"text":"Обнаружение вирусов в однослойных культурах клеток проводится:","text_after":"","number":24,"images":[],"answers":[{"uid":14651,"answer":"в реакции гемадсорбции","images":[]},{"uid":2726,"answer":"по образованию бляшек","images":[]},{"uid":10689,"answer":"по образованию симпластов","images":[]},{"uid":4042,"answer":"в реакции гемагглютинации","images":[]},{"uid":26347,"answer":"по образованию включений","images":[]}],"answers_draggable":[],"is_last_question":false,"duration":null},{"type":1,"text":"Основным механизмом передачи SARS-CoV-2 является:","text_after":"","number":25,"images":[],"answers":[{"uid":3363,"answer":"фекально-оральный","images":[]},{"uid":9025,"answer":"аэрогенный","images":[]},{"uid":3882,"answer":"контактный","images":[]},{"uid":21590,"answer":"вертикальный","images":[]},{"uid":8072,"answer":"трансмиссивный","images":[]}],"answers_draggable":[],"is_last_question":false,"duration":null},{"type":4,"text":"Установите соответствие между типом профилактической вакцины и заболеванием:","text_after":"","number":26,"images":[],"answers":[{"uid":20156,"answer":"живая вакцина","images":[]},{"uid":27389,"answer":"инактивированная вакцина","images":[]},{"uid":6959,"answer":"генно-инженерная вакцина","images":[]},{"uid":10260,"answer":"живая и инактивированная вакцины","images":[]},{"uid":14112,"answer":"плановая профилактика отсутствует","images":[]}],"answers_draggable":[{"uid":0,"answer":"профилактика герпеса","images":[]},{"uid":1,"answer":"профилактика бешенства","images":[]},{"uid":2,"answer":"профилактика гепатита B","images":[]},{"uid":3,"answer":"профилактика полиомиелита","images":[]},{"uid":4,"answer":"профилактика кори","images":[]}],"is_last_question":false,"duration":null},{"type":1,"text":"Какому из перечисленных семейств вирусов соответствует данная схема стратегии репликации генома?","text_after":"","number":27,"images":["6659a7e11b7e82.79573443.png"],"answers":[{"uid":29383,"answer":"Retroviridae","images":[]},{"uid":17740,"answer":"Hepadnaviridae","images":[]},{"uid":10392,"answer":"Orthomyxoviridae","images":[]},{"uid":24389,"answer":"Picornaviridae","images":[]}],"answers_draggable":[],"is_last_question":false,"duration":null},{"type":4,"text":"﻿Установите соответствие между группой препаратов и основным механизмом действия:","text_after":"","number":28,"images":[],"answers":[{"uid":5374,"answer":"аномальные нуклеозиды","images":[]},{"uid":3945,"answer":"специфические иммуноглобулины","images":[]},{"uid":4506,"answer":"ингибиторы протеаз","images":[]},{"uid":20978,"answer":"альфа-интерфероны","images":[]}],"answers_draggable":[{"uid":0,"answer":"нарушение нарезания вирусных полипротеинов","images":[]},{"uid":1,"answer":"ингибирование синтеза вирусных нуклеиновых кислот","images":[]},{"uid":2,"answer":"ингибирование трансляции и разрушение мРНК","images":[]},{"uid":3,"answer":"нейтрализация внеклеточных вирусных частиц","images":[]}],"is_last_question":false,"duration":null},{"type":1,"text":"Какая из перечисленных ферментативных активностей обозначена знаком вопроса (?) в данной схеме стратегии репликации генома?","text_after":"","number":29,"images":["6659a7e0eaa9a1.48143601.png"],"answers":[{"uid":29188,"answer":"ДНК-лигаза","images":[]},{"uid":16964,"answer":"Обратная транскриптаза","images":[]},{"uid":30929,"answer":"ДНК-зависимая ДНК-полимераза","images":[]},{"uid":4061,"answer":"ДНК-зависимая РНК-полимераза","images":[]},{"uid":30014,"answer":"РНК-зависимая РНК-полимераза","images":[]}],"answers_draggable":[],"is_last_question":true,"duration":null}]'
+            v-bind:question-types='{"QUESTION_TYPE_ONE_FROM_MANY":1,"QUESTION_TYPE_MANY_FROM_MANY":2,"QUESTION_TYPE_TEXT":3,"QUESTION_TYPE_MATCHING":4,"QUESTION_TYPE_CLASSIFICATION_YES_NO":5,"QUESTION_TYPE_SORT":6,"QUESTION_TYPE_MULTILINE_TEXT":7}'
+            v-bind:options='{"maxUnsavedAnswers":"5","maxUnsavedTime":"10","isShowProtocol":true,"isPrevDisabled":false,"questionDurationSec":0,"isShowQuestionsAfterFinish":false,"isUnscheduledTest":false}'
+            v-bind:user-photo="'00746FD35B6C4356A1A4B9D2492DA2D7.jpg'"
+            v-bind:photo-path="'https://aos.rsmu.ru/upload/l_person_photo/'"
+            v-bind:user-name="'Захаров Олег Станиславович'"
+            v-bind:ws_url="'wss://ks.rsmu.ru:8080/'"
+            v-bind:is-test-finished="0"
+        >
+        </questions>
+    </div>
+    </main>
+
+
+</div>
+
+<footer class="footer">
+    <div class="columns">
+        <div class="column">
+        </div>
+        <div class="column">
+            <div class="content has-text-centered">
+                <p>
+                    © 2024 ФГАОУ ВО РНИМУ им. Н.И. Пирогова Минздрава России
+                </p>
+            </div>
+        </div>
+        <div class="column">
+            <p class=" is-size-7">По техническим вопросам и неполадкам работы ЛК студента просьба обращаться в каб. 230 или по электронной почте
+                <a href="mailto:eor@rsmu.ru" class="has-text-white">eor@rsmu.ru</a></p>
+        </div>
+    </div>
+
+</footer>
+
+</body>
+</html>
+
