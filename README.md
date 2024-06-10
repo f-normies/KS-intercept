@@ -14,7 +14,7 @@ KS-intercept is a tool designed to intercept data from ks.rsmu.ru
 First, you need to clone the repository from GitHub. Open a terminal or command prompt and navigate to the directory where you want to clone the repository. Then, run:
 
 ```sh
-git clone https://github.com/yourusername/KS-intercept.git
+git clone https://github.com/f-normies/KS-intercept.git
 cd KS-intercept
 ```
 
