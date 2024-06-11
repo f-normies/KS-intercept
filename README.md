@@ -12,6 +12,10 @@ KS-intercept is a tool designed to intercept data from ks.rsmu.ru
 ## TODO
 1. Correct deduplication
 2. GUI
+    * Delete PID when closing app
+    * Output currently intercept data
+    * Settings window
+    * Exceptions
 3. Simple installation
 4. Fix README
 

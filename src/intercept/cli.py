@@ -41,11 +41,15 @@ def stop():
         pid = int(f.read())
     
     print("Stopping proxy...")
-    os.kill(pid, signal.SIGINT)
-    
-    # Remove the PID file
-    os.remove(PID_FILE)
-    print("Proxy stopped.")
+    try:
+        os.kill(pid, signal.SIGINT)
+        os.remove(PID_FILE)  # Remove the PID file after stopping
+        print("Proxy stopped.")
+    except ProcessLookupError:
+        print(f"No process with PID {pid} found. Cleaning up.")
+        os.remove(PID_FILE)  # Clean up stale PID file
+    except Exception as e:
+        print(f"An error occurred: {e}")
 
 def deduplicate_questions(questions_list):
     seen = {}
