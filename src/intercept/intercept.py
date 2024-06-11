@@ -2,6 +2,7 @@ from mitmproxy import http
 from bs4 import BeautifulSoup
 import json
 import os
+from datetime import datetime
 
 questions_list = []
 
@@ -18,6 +19,7 @@ def response(flow: http.HTTPFlow) -> None:
         new_questions_list = json.loads(questions_data)
         for question in new_questions_list:
             question['type'] = questions_type[question['type']][14:]
+            question['timestamp'] = datetime.now().strftime("%d-%m-%Y_%H-%M-%S")
 
         global questions_list
         questions_list.extend(new_questions_list)

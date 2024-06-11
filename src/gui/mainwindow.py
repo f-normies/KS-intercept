@@ -1,16 +1,7 @@
-# -*- coding: utf-8 -*-
-
-################################################################################
-## Form generated from reading UI file 'mainwindow.ui'
-##
-## Created by: Qt User Interface Compiler version 6.7.1
-##
-## WARNING! All changes made in this file will be lost when recompiling UI file!
-################################################################################
-
+import sys
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
     QMetaObject, QObject, QPoint, QRect,
-    QSize, QTime, QUrl, Qt)
+    QSize, QTime, QUrl, Qt, QThread, Signal)
 from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
     QCursor, QFont, QFontDatabase, QGradient,
     QIcon, QImage, QKeySequence, QLinearGradient,
@@ -18,85 +9,131 @@ from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
     QTransform)
 from PySide6.QtWidgets import (QApplication, QFrame, QMainWindow, QMenu,
     QMenuBar, QPushButton, QScrollArea, QSizePolicy,
-    QStatusBar, QVBoxLayout, QWidget)
+    QStatusBar, QVBoxLayout, QWidget, QLabel, QDialog, QMessageBox)
 
-import sys
 import subprocess
 from pathlib import Path
 import logging
 
-logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
+import threading
+import time
+from watchdog.observers import Observer
+from watchdog.events import FileSystemEventHandler
+import json
 
-class Ui_MainWindow(object):
-    def setupUi(self, MainWindow):
-        if not MainWindow.objectName():
-            MainWindow.setObjectName(u"MainWindow")
-        MainWindow.setWindowModality(Qt.WindowModality.NonModal)
-        MainWindow.resize(500, 400)
-        self.centralwidget = QWidget(MainWindow)
-        self.centralwidget.setObjectName(u"centralwidget")
-        self.verticalLayoutWidget = QWidget(self.centralwidget)
-        self.verticalLayoutWidget.setObjectName(u"verticalLayoutWidget")
-        self.verticalLayoutWidget.setGeometry(QRect(280, 10, 211, 341))
-        self.buttonsLayout = QVBoxLayout(self.verticalLayoutWidget)
-        self.buttonsLayout.setObjectName(u"buttonsLayout")
-        self.buttonsLayout.setContentsMargins(0, 0, 0, 0)
-        self.proxyButton = QPushButton(self.verticalLayoutWidget)
-        self.proxyButton.setObjectName(u"proxyButton")
+import platform
 
-        self.buttonsLayout.addWidget(self.proxyButton)
+from src.gui.mainwindow_base import Ui_MainWindow
+from src.gui.settings_base import Ui_Dialog
 
-        self.pushButton = QPushButton(self.verticalLayoutWidget)
-        self.pushButton.setObjectName(u"pushButton")
+class FileWatcherHandler(FileSystemEventHandler):
+    def __init__(self, callback):
+        self.callback = callback
 
-        self.buttonsLayout.addWidget(self.pushButton)
+    def on_modified(self, event):
+        if event.src_path.endswith('intercepted_data.json'):
+            self.callback()
 
-        self.frame = QFrame(self.centralwidget)
-        self.frame.setObjectName(u"frame")
-        self.frame.setGeometry(QRect(10, 10, 261, 341))
-        self.frame.setFrameShape(QFrame.Shape.StyledPanel)
-        self.frame.setFrameShadow(QFrame.Shadow.Raised)
-        self.scrollArea = QScrollArea(self.frame)
-        self.scrollArea.setObjectName(u"scrollArea")
-        self.scrollArea.setGeometry(QRect(0, 0, 261, 341))
-        self.scrollArea.setWidgetResizable(True)
-        self.scrollAreaWidgetContents_2 = QWidget()
-        self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
-        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 259, 339))
-        self.scrollArea.setWidget(self.scrollAreaWidgetContents_2)
-        MainWindow.setCentralWidget(self.centralwidget)
-        self.menubar = QMenuBar(MainWindow)
-        self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 500, 23))
-        self.menuSettings = QMenu(self.menubar)
-        self.menuSettings.setObjectName(u"menuSettings")
-        MainWindow.setMenuBar(self.menubar)
-        self.statusbar = QStatusBar(MainWindow)
-        self.statusbar.setObjectName(u"statusbar")
-        MainWindow.setStatusBar(self.statusbar)
+    def on_created(self, event):
+        if event.src_path.endswith('intercepted_data.json'):
+            self.callback()
 
-        self.menubar.addAction(self.menuSettings.menuAction())
+class FileWatcherThread(QThread):
+    update_signal = Signal(list)
 
-        self.retranslateUi(MainWindow)
+    def __init__(self, directory):
+        super().__init__()
+        self.directory = directory
+        self.timestamps = set()
+        self.observer = Observer()
+        self.event_handler = FileWatcherHandler(self.process_file)
+        self.observer.schedule(self.event_handler, self.directory, recursive=False)
 
-        QMetaObject.connectSlotsByName(MainWindow)
-    # setupUi
+    def run(self):
+        self.observer.start()
+        try:
+            while True:
+                time.sleep(1)
+        finally:
+            self.observer.stop()
+            self.observer.join()
 
-    def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
-        self.proxyButton.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u043f\u0443\u0441\u043a", None))
-        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c", None))
-        self.menuSettings.setTitle(QCoreApplication.translate("MainWindow", u"\u041d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438", None))
-    # retranslateUi
+    def process_file(self):
+        file_path = Path(self.directory) / 'intercepted_data.json'
+        if not file_path.exists():
+            return
+
+        try:
+            with open(file_path, 'r', encoding='utf-8-sig') as file:
+                data = json.load(file)
+
+            new_timestamps = {entry['timestamp'] for entry in data if 'timestamp' in entry}
+            self.timestamps.update(new_timestamps)
+            sorted_timestamps = sorted(self.timestamps)
+            self.update_signal.emit(sorted_timestamps)
+
+        except Exception as e:
+            logging.error(f"Error processing file: {e}")
+
+class SettingsDialog(QDialog, Ui_Dialog):
+    def __init__(self, parent=None):
+        super(SettingsDialog, self).__init__(parent)
+        self.setupUi(self)
+
+        self.saveButton.clicked.connect(self.save_settings)
+        self.configureButton.clicked.connect(self.install_dependencies)
+    
+    def show_message(self, title, message, icon):
+            msg_box = QMessageBox(self)
+            msg_box.setWindowTitle(title)
+            msg_box.setText(message)
+            msg_box.setIcon(icon)
+            msg_box.exec()
+
+    def save_settings(self):
+        # ...
+        self.accept()
+    
+    def install_dependencies(self):
+        subprocess.run(["pip", "install", "-r", "requirements.txt"], capture_output=True, text=True)
+        
+        os_name = platform.system()
+
+        if os_name == "Windows":
+            subprocess.run(["cd", "%USERPROFILE%/.mitmproxy"], capture_output=True, text=True)
+            subprocess.run(["certutil", "-addstore", "-f", "\"ROOT\"", "mitmproxy-ca-cert.pem"], capture_output=True, text=True)
+        elif os_name == "Darwin":  # macOS
+            subprocess.run(["cd", "~/.mitmproxy"], capture_output=True, text=True)
+            subprocess.run(["sudo", "security", "add-trusted-cert", "-d", "-r", "trustRoot", "-k", "/Library/Keychains/System.keychain mitmproxy-ca-cert.pem"], capture_output=True, text=True)
+        elif os_name == "Linux":
+            self.show_message("Сертификаты MITMProxy", "Вы используете Linux. Пожалуйста, установите CA сертификаты (~/.mitmproxy) самостоятельно, подходящим для вашего дистрибутива образом.", QMessageBox.Information)
+        else:
+            print(f"Unsupported OS: {os_name}")
+            return
+            
+        # Close the dialog
+        self.accept()
 
 class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
         self.script_running = False
+
         self.script_path = Path(__file__).resolve().parent.parent / "intercept"
+
         self.proxyButton.clicked.connect(self.toggle_script)
-        self.pushButton.clicked.connect(self.save_intercepted_data)
+        self.saveButton.clicked.connect(self.save_intercepted_data)
+
+        self.scroll_layout = QVBoxLayout(self.scrollAreaWidgetContents_2)
+        
+        self.file_watcher_thread = FileWatcherThread(self.script_path)
+        self.file_watcher_thread.update_signal.connect(self.update_scroll_area)
+        self.file_watcher_thread.start()
+
+        self.actionSettings = QAction("&Настройки", self)
+        self.menuSettings.addAction(self.actionSettings)
+        self.actionSettings.triggered.connect(self.open_settings_dialog)
 
     def toggle_script(self):
         if self.script_running:
@@ -122,6 +159,33 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         logging.info('Saving intercepted data...')
         subprocess.run(["python", "cli.py", "save"], cwd=self.script_path)
         logging.info('Intercepted data saved')
+        
+        for i in reversed(range(self.scroll_layout.count())):
+            widget = self.scroll_layout.itemAt(i).widget()
+            if widget:
+                widget.setParent(None)
+
+    def update_scroll_area(self, timestamps):
+        # Clear existing labels
+        for i in reversed(range(self.scroll_layout.count())):
+            widget = self.scroll_layout.itemAt(i).widget()
+            if widget:
+                widget.setParent(None)
+
+        # Add new labels with timestamps
+        for index, timestamp in enumerate(timestamps):
+            label = QLabel(f"{index + 1} - {timestamp}")
+            self.scroll_layout.addWidget(label)
+    
+    def closeEvent(self, event):
+        logging.info('Application is closing...')
+        if self.script_running:
+            self.stop_script()
+        event.accept()
+
+    def open_settings_dialog(self):
+        dialog = SettingsDialog(self)
+        dialog.exec()
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
