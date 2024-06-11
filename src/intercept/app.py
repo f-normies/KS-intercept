@@ -5,7 +5,7 @@ import signal
 import json
 from datetime import datetime
 
-proxy_process = None
+PID_FILE = 'proxy.pid'
 
 @click.group()
 def cli():
@@ -14,29 +14,37 @@ def cli():
 @click.command()
 @click.option('-q', '--quiet', is_flag=True, help='Suppress mitmproxy logs')
 def start(quiet):
-    global proxy_process
-    if proxy_process is not None:
+    if os.path.exists(PID_FILE):
         print("Proxy is already running.")
         return
     
     print("Starting proxy...")
-    args = ['mitmdump', '-s', 'intercept.py']
+    args = ['mitmdump', '--listen-port', '44700', '-s', 'intercept.py']
     if quiet:
         args.append('--quiet')
     proxy_process = subprocess.Popen(args)
+    
+    # Save the PID to a file
+    with open(PID_FILE, 'w') as f:
+        f.write(str(proxy_process.pid))
+    
     print("Proxy started. Listening for browser requests...")
 
 @click.command()
 def stop():
-    global proxy_process
-    if proxy_process is None:
+    if not os.path.exists(PID_FILE):
         print("Proxy is not running.")
         return
 
+    # Read the PID from the file
+    with open(PID_FILE, 'r') as f:
+        pid = int(f.read())
+    
     print("Stopping proxy...")
-    proxy_process.send_signal(signal.SIGINT)
-    proxy_process.wait()
-    proxy_process = None
+    os.kill(pid, signal.SIGINT)
+    
+    # Remove the PID file
+    os.remove(PID_FILE)
     print("Proxy stopped.")
 
 def deduplicate_questions(questions_list):

@@ -1,12 +1,19 @@
 # KS-intercept
 KS-intercept is a tool designed to intercept data from ks.rsmu.ru
 
+- [TODO](#todo)
 - [Installation](#installation)
   - [Clone the Repository](#clone-the-repository)
   - [Install Dependencies](#install-dependencies)
   - [Install mitmproxy](#install-mitmproxy)
 - [Usage](#usage)
 - [License](#license)
+
+## TODO
+1. Correct deduplication
+2. GUI
+3. Simple installation
+4. Fix README
 
 ## Installation
 ### Clone the Repository
@@ -26,24 +33,24 @@ pip install -r requirements.txt
 ```
 
 ### Configure mitmproxy
-1. *Set System Proxy to `localhost:8080`*
+1. *Set System Proxy to `localhost:44700`*
     * **Windows**:
         1. Open Settings and go to Network & Internet.
         2. Click on Proxy.
-        3. In the Manual proxy setup section, set the Address to localhost and the Port to 8080.
+        3. In the Manual proxy setup section, set the Address to localhost and the Port to 44700.
         4. Save your changes.
     * **macOS**:
         1. Open System Preferences and go to Network.
         2. Select your active network connection and click Advanced.
         3. Go to the Proxies tab.
         4. Check Web Proxy (HTTP) and Secure Web Proxy (HTTPS).
-        5. Set the Web Proxy Server and Secure Web Proxy Server to localhost and the Port to 8080.
+        5. Set the Web Proxy Server and Secure Web Proxy Server to localhost and the Port to 44700.
         6. Click OK and then Apply.
     * **Linux**:
         1. Open Settings and go to Network.
         2. Click the Settings icon next to your network.
         3. Go to the Proxy tab.
-        4. Select Manual and set the HTTP Proxy and HTTPS Proxy to localhost:8080.
+        4. Select Manual and set the HTTP Proxy and HTTPS Proxy to localhost:44700.
         5. Save your changes.
 
 2. *Install mitmproxy Certificates*
