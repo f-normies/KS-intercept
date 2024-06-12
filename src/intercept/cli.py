@@ -24,7 +24,6 @@ def start(quiet):
         args.append('--quiet')
     proxy_process = subprocess.Popen(args)
     
-    # Save the PID to a file
     with open(PID_FILE, 'w') as f:
         f.write(str(proxy_process.pid))
     
@@ -36,18 +35,17 @@ def stop():
         print("Proxy is not running.")
         return
 
-    # Read the PID from the file
     with open(PID_FILE, 'r') as f:
         pid = int(f.read())
     
     print("Stopping proxy...")
     try:
         os.kill(pid, signal.SIGINT)
-        os.remove(PID_FILE)  # Remove the PID file after stopping
+        os.remove(PID_FILE)
         print("Proxy stopped.")
     except ProcessLookupError:
         print(f"No process with PID {pid} found. Cleaning up.")
-        os.remove(PID_FILE)  # Clean up stale PID file
+        os.remove(PID_FILE)
     except Exception as e:
         print(f"An error occurred: {e}")
 

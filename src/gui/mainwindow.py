@@ -1,4 +1,5 @@
 import sys
+import os
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
     QMetaObject, QObject, QPoint, QRect,
     QSize, QTime, QUrl, Qt, QThread, Signal)
@@ -100,18 +101,17 @@ class SettingsDialog(QDialog, Ui_Dialog):
         os_name = platform.system()
 
         if os_name == "Windows":
-            subprocess.run(["cd", "%USERPROFILE%/.mitmproxy"], capture_output=True, text=True)
-            subprocess.run(["certutil", "-addstore", "-f", "\"ROOT\"", "mitmproxy-ca-cert.pem"], capture_output=True, text=True)
+            cert_path = f"{os.getenv('USERPROFILE')}\\.mitmproxy\\mitmproxy-ca-cert.pem"
+            subprocess.run(["certutil", "-addstore", "-f", "ROOT", cert_path], capture_output=True, text=True)
         elif os_name == "Darwin":  # macOS
-            subprocess.run(["cd", "~/.mitmproxy"], capture_output=True, text=True)
-            subprocess.run(["sudo", "security", "add-trusted-cert", "-d", "-r", "trustRoot", "-k", "/Library/Keychains/System.keychain mitmproxy-ca-cert.pem"], capture_output=True, text=True)
+            cert_path = "~/mitmproxy-ca-cert.pem"
+            subprocess.run(["sudo", "security", "add-trusted-cert", "-d", "-r", "trustRoot", "-k", "/Library/Keychains/System.keychain", cert_path], capture_output=True, text=True)
         elif os_name == "Linux":
             self.show_message("Сертификаты MITMProxy", "Вы используете Linux. Пожалуйста, установите CA сертификаты (~/.mitmproxy) самостоятельно, подходящим для вашего дистрибутива образом.", QMessageBox.Information)
         else:
             print(f"Unsupported OS: {os_name}")
             return
-            
-        # Close the dialog
+        
         self.accept()
 
 class MainWindow(QMainWindow, Ui_MainWindow):
@@ -166,13 +166,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 widget.setParent(None)
 
     def update_scroll_area(self, timestamps):
-        # Clear existing labels
         for i in reversed(range(self.scroll_layout.count())):
             widget = self.scroll_layout.itemAt(i).widget()
             if widget:
                 widget.setParent(None)
 
-        # Add new labels with timestamps
         for index, timestamp in enumerate(timestamps):
             label = QLabel(f"{index + 1} - {timestamp}")
             self.scroll_layout.addWidget(label)
