@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'mainwindow_base.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.7.1
+## Created by: Qt User Interface Compiler version 6.7.0
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -26,6 +26,13 @@ class Ui_MainWindow(object):
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.setWindowModality(Qt.WindowModality.NonModal)
         MainWindow.resize(500, 400)
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(MainWindow.sizePolicy().hasHeightForWidth())
+        MainWindow.setSizePolicy(sizePolicy)
+        MainWindow.setMinimumSize(QSize(500, 400))
+        MainWindow.setMaximumSize(QSize(500, 400))
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayoutWidget = QWidget(self.centralwidget)
@@ -62,7 +69,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 500, 23))
+        self.menubar.setGeometry(QRect(0, 0, 500, 22))
         self.menuSettings = QMenu(self.menubar)
         self.menuSettings.setObjectName(u"menuSettings")
         MainWindow.setMenuBar(self.menubar)

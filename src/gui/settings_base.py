@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'settings_base.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.7.1
+## Created by: Qt User Interface Compiler version 6.7.0
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -23,10 +23,17 @@ class Ui_Dialog(object):
         if not Dialog.objectName():
             Dialog.setObjectName(u"Dialog")
         Dialog.resize(400, 300)
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(Dialog.sizePolicy().hasHeightForWidth())
+        Dialog.setSizePolicy(sizePolicy)
+        Dialog.setMinimumSize(QSize(400, 300))
+        Dialog.setMaximumSize(QSize(400, 300))
         self.saveButton = QPushButton(Dialog)
         self.saveButton.setObjectName(u"saveButton")
         self.saveButton.setGeometry(QRect(286, 260, 101, 26))
-        icon = QIcon(QIcon.fromTheme(QIcon.ThemeIcon.DocumentSave))
+        icon = QIcon(QIcon.fromTheme(u"QIcon::ThemeIcon::DocumentSave"))
         self.saveButton.setIcon(icon)
         self.configureButton = QPushButton(Dialog)
         self.configureButton.setObjectName(u"configureButton")
