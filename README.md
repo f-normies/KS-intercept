@@ -96,34 +96,37 @@ pip install -r requirements.txt
 ### WARNING
 Any additional VPN, Proxy or another traffic-changing app can be a problem to work with. **Please, turn off any VPN, Proxy or another traffic-changing app SYSTEM-WIDE.**
 
-### Start the Proxy
+### GUI mode
 Navigate to the src\KS-intercept directory:
 ```sh
 cd src\KS-intercept
 ```
 
-To start the proxy and begin listening for browser requests, run:
+To start GUI app run:
 ```sh
-python app.py start [-q, --quiet] 
+python app.py 
+```
+
+After that you can open tests in `ks2.rsmu.ru`. **Using ks2 is important**.
+
+### CLI mode
+```sh
+python src/intercept/cli.py start [-q, --quiet] 
 
 OPTIONAL FLAGS:
 -q  Suppress mitmproxy logs
 ```
 
-After that you can open tests in `ks2.rsmu.ru`. **Using ks2 is important**.
-
-### Save Collected Data
 After intercepting the required data, run:
 
 ```sh
-python app.py save
+python src/intercept/cli.py save
 ```
 
 This command will save the collected data to the output folder.
 
-### Stop the Proxy
 To stop the proxy, run:
 
 ```sh
-python app.py stop
+python src/intercept/cli.py stop
 ```
